@@ -3,6 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from decimal import Decimal
 
+
+# I am pretty sure this entire script can be done much easier, but was basically only for learning.
+
 titanic_df = pd.read_csv("/home/bigdata/Downloads/train.csv")
 
 nr_females_tot = len(titanic_df[titanic_df['Sex'] == 'female'])
