@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Path to file need to be changed.
-titanic_df = pd.read_csv("/home/bigdata/Downloads/train.csv")
+titanic_df = pd.read_csv("train.csv")
 
 classes = []
 
