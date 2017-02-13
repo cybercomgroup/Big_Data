@@ -2,48 +2,25 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
-import org.apache.commons.io.FilenameUtils;
-import weka.classifiers.Classifier;
-import weka.classifiers.Evaluation;
-import weka.classifiers.evaluation.NominalPrediction;
-import weka.classifiers.rules.DecisionTable;
-import weka.classifiers.rules.PART;
-import weka.classifiers.trees.DecisionStump;
+
 import weka.classifiers.trees.J48;
-import weka.core.FastVector;
+
 import weka.core.Instances;
 
 
 
 
 public class WekaTest {
-
-
-
     public static BufferedReader readDataFile(String filename) throws Exception{
-        String[] compatibleExtension = {"arff", "csv"};
+        //String[] compatibleExtension = {"arff", "csv"};
+        //String extension = FilenameUtils.getExtension(filename);
 
         BufferedReader inputReader = null;
-
-        String extension = FilenameUtils.getExtension(filename);
-
-
-
-        if(extension.compareTo(compatibleExtension[0]) == 0){ //arff
-            try {
-                inputReader = new BufferedReader(new FileReader(filename));
-            } catch (FileNotFoundException ex) {
-                System.err.println("File not found: " + filename);
-            }
-        } else if(extension.compareTo(compatibleExtension[1]) == 0){ //csv
-
-        }else{
-            throw new Exception("Not compatible extension:(" + extension + ")\nCompatible extensions: " + compatibleExtension.toString());
+        try {
+            inputReader = new BufferedReader(new FileReader(filename));
+        } catch (FileNotFoundException ex) {
+            System.err.println("File not found: " + filename);
         }
-
-
-
-
         return inputReader;
     }
 
@@ -64,8 +41,11 @@ public class WekaTest {
         input.setClassIndex(input.numAttributes() - 1);
         output.setClassIndex(output.numAttributes() - 1);
 
-
-
+        String[] options = new String [1];
+        options[0] = "-U"; //unpruned tree
+        J48 tree = new J48(); //The tree algorithm instance
+        tree.setOptions(options);
+        tree.buildClassifier(input);
 
     }
 }
