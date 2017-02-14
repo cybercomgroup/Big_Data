@@ -6,6 +6,7 @@ df = pd.read_csv('train.csv')
 
 #Small script for learing python
 #Shows age distribution and how many did not survive in a bar graph
+#Do not take into account people without age data
 pplDead = df[df["Survived"] == 0]
 pplAge = []
 pplAgeDead = []
