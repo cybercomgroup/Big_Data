@@ -30,7 +30,7 @@ machine.fit(train_set.values, titanic_results.values)
 predicted_survival=machine.predict(train_set.values)
 
 predictionSuccess=(1-np.mean(predicted_survival != titanic_results.values))*100
-print("Test against training set(self test): "+str(predictionSuccess)+"% correctness")
+#print("Test against training set(self test): "+str(predictionSuccess)+"% correctness")
 ###End selftest
 
 
@@ -49,8 +49,14 @@ del test_set["PassengerId"]
 
 test_set.fillna(0, None, None, True)	
 
-print(test_set.values)
+#print(test_set.values)
 test_prediction=machine.predict(test_set.values)
-print("Test aganst test set: "+str(test_prediction))
+#print("Test aganst test set: "+str(test_prediction))
+
+untouchedTest =  pd.read_csv('../Titanic_Dataset/test.csv')
+untouchedTest=untouchedTest["PassengerId"]
+untouchedTest['Survived']=test_prediction
+untouchedTest.to_csv("predicted.csv")
+
 ###End Predict
 
