@@ -17,6 +17,7 @@ train_set["Sex"].replace("female", "1", True)
 del train_set["Name"]
 del train_set["Cabin"]
 del train_set["Ticket"]
+del train_set["PassengerId"]
 
 train_set.fillna(0, None, None, True)		
 titanic_results = train_set["Survived"]
@@ -34,21 +35,22 @@ print("Test against training set(self test): "+str(predictionSuccess)+"% correct
 
 
 ###Predict survival of test.csv
-#test_set["Embarked"].replace("S", "0", True)
-#test_set["Embarked"].replace("C", "1", True)
-#test_set["Embarked"].replace("Q", "2", True)
+test_set["Embarked"].replace("S", "0", True)
+test_set["Embarked"].replace("C", "1", True)
+test_set["Embarked"].replace("Q", "2", True)
 
-#test_set["Sex"].replace("male", "0", True)
-#test_set["Sex"].replace("female", "1", True)
+test_set["Sex"].replace("male", "0", True)
+test_set["Sex"].replace("female", "1", True)
 
-#del test_set["Name"]
-#del test_set["Cabin"]
-#del test_set["Ticket"]
+del test_set["Name"]
+del test_set["Cabin"]
+del test_set["Ticket"]
+del test_set["PassengerId"]
 
-#test_set.fillna(0, None, None, True)	
+test_set.fillna(0, None, None, True)	
 
-#print(test_set.values)
-#test_prediction=machine.predict(test_set.values)
-#print("Test aganst test set: "+str(test_prediction))
+print(test_set.values)
+test_prediction=machine.predict(test_set.values)
+print("Test aganst test set: "+str(test_prediction))
 ###End Predict
 
