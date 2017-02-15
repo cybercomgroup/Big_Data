@@ -50,7 +50,7 @@ del test_set["PassengerId"]
 test_set.fillna(0, None, None, True)	
 
 #print(test_set.values)
-test_prediction=machine.predict(test_set.values)
+test_prediction=machine.predict(test_set)
 #print("Test aganst test set: "+str(test_prediction))
 
 untouchedTest =  pd.read_csv('../Titanic_Dataset/test.csv')
