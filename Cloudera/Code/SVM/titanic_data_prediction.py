@@ -55,8 +55,14 @@ test_prediction=machine.predict(test_set)
 
 untouchedTest =  pd.read_csv('../Titanic_Dataset/test.csv')
 untouchedTest=untouchedTest["PassengerId"]
-untouchedTest['Survived']=test_prediction
-untouchedTest.to_csv("predicted.csv")
+untouchedTest.columns=["PassengerId"]
+
+predictionDF=pd.DataFrame(test_prediction, np.arange(len(test_prediction)),columns=["Survived"])
+print(untouchedTest)
+
+
+joinedDF=pd.concat([untouchedTest,predictionDF], axis=1)
+joinedDF.to_csv("predicted.csv",index=False)
 
 ###End Predict
 
