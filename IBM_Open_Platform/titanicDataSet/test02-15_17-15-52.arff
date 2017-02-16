@@ -8,7 +8,7 @@
 @attribute Age {-1,0,1}
 @attribute SibSp numeric
 @attribute Parch numeric
-@attribute Ticket {A/4,W.E.P.,SC/PARIS,STON/O2.,PC,C,A/5.,SC/AH,C.A.,W./C.,SOTON/O.Q.,STON/O,SC/A.3,F.C.C.,F.C.,A./5.,PP,STON/OQ.,SOTON/OQ,CA,SC/A4,S.O./P.P.,CA.,S.O.C.,SOTON/O2,AQ/4,A.,SC,A/5,SC/Paris,LP,AQ/3.,S.C./PARIS,A.5.}
+@attribute Ticket string
 @attribute Fare numeric
 @attribute Cabin numeric
 @attribute Embarked {S,C,Q}

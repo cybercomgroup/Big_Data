@@ -13,9 +13,6 @@ public class TitanicParser {
     public static String parse(BufferedReader input, String filename) {
         StringBuilder outputString = new StringBuilder();
 
-        //HashSet<String> ticketNotes = new HashSet<String>();
-        //HashSet<String> titles = new HashSet<String>();
-
 
         DateFormat dateFormat = new SimpleDateFormat("MM-dd_HH-mm-ss");
         Date date = new Date();
@@ -128,7 +125,7 @@ public class TitanicParser {
             if(c == ','){
                 keep = true;
             }else if(c == '.'){
-                keep = false;
+                break;
             }
             if(keep){
                 title.append(c);
