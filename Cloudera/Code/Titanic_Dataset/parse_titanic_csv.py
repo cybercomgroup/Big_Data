@@ -51,7 +51,6 @@ def parseTitle(sets):
 def setFamily(sets):
 	for set in sets:
 		set["Family"] = set["Parch"] + set["SibSp"]
-		set["Family"][ set["Family"] > 0 ] = 1
 		set.drop("Parch", axis=1, inplace=True)
 		set.drop("SibSp", axis=1, inplace=True)
 	return sets
