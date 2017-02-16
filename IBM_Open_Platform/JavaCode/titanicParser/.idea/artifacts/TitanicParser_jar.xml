@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="TitanicParser:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TitanicParser_jar</output-path>
+    <root id="archive" name="titanicParser.jar">
+      <element id="module-output" name="titanicParser" />
+      <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/titanicParser_jar/test.csv" />
+    </root>
+  </artifact>
+</component>
