@@ -76,7 +76,7 @@ sets = setGender(sets)
 
 
 for set in sets:
-	set["Fare"][ np.isnan( set["Fare" ) ] = set["Fare"].median()
+	set["Fare"][ np.isnan( set["Fare"] ) ] = set["Fare"].median()
 	set.drop("Ticket", axis = 1, inplace = True)
 	set.drop("Cabin", axis = 1, inplace = True)
 
