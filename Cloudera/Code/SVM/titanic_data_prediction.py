@@ -30,7 +30,7 @@ machine.fit(train_set.values, titanic_results.values)
 predicted_survival=machine.predict(train_set.values)
 
 predictionSuccess=(1-np.mean(predicted_survival != titanic_results.values))*100
-#print("Test against training set(self test): "+str(predictionSuccess)+"% correctness")
+print("Test against training set(self test): "+str(predictionSuccess)+"% correctness")
 ###End selftest
 
 
