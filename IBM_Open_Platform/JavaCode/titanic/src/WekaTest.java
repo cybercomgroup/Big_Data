@@ -3,13 +3,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 
 
-import weka.classifiers.trees.J48;
-
-import weka.core.Instances;
-
-
-
-
 public class WekaTest {
     public static BufferedReader readDataFile(String filename) throws Exception{
         //String[] compatibleExtension = {"arff", "csv"};
@@ -28,8 +21,25 @@ public class WekaTest {
 
 
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
+       // BufferedReader inputFile = readDataFile("D:\\bigdata\\Big_Data\\IBM_Open_Platform\\JavaCode\\titanic\\test.txt");
+
+
+        BufferedReader inputReader = null;
+        try {
+            inputReader = new BufferedReader(new FileReader(args[0]));
+
+        } catch (Exception ex) {
+            System.out.print(ex.toString());
+        }
+
+
+
+        TitanicParser.parse(inputReader, "ost");
+
+
+/**
         //Init input and output instances
 
         BufferedReader inputFile = readDataFile(args[0]);
@@ -46,6 +56,6 @@ public class WekaTest {
         J48 tree = new J48(); //The tree algorithm instance
         tree.setOptions(options);
         tree.buildClassifier(input);
-
+**/
     }
 }

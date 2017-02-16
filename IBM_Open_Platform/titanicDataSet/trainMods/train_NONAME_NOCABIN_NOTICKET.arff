@@ -1,7 +1,7 @@
 @relation train_NONAME_NOCABIN_NOTICKET
 
 @attribute PassengerId numeric
-@attribute Survived numeric
+@attribute Survived {0, 1}
 @attribute Pclass numeric
 @attribute Sex {male,female}
 @attribute Age numeric
