@@ -7,8 +7,8 @@ from sklearn import svm
 train_set = pd.read_csv(str(sys.argv[1]))
 test_set = pd.read_csv(str(sys.argv[2]))
 
-#del train_set["Fare"]
-#del test_set["Fare"]
+del train_set["Fare"]
+del test_set["Fare"]
 
 choise=input("Choose kernel type(SVM):\n1)linear\n2)poly\n3)rbf\n4)sigmoid\n5)precomputed")
 if choise=="1":
