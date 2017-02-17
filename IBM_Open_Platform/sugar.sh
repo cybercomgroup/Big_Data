@@ -21,13 +21,11 @@ if [ hadoop fs -test -d $2 != 0 ]; then
 	exit
 fi
 
-now = date + "%m-%d-%y_%H:%M:%S"
+now = date + "%d-%m-%y_%H:%M:%S"
 outputPath = "$3/$now"
 
 hadoop jar $1 $2 $outputPath
 
-if [ $# -ne 4 ]; then
-	exit
+if [ $# -eq 4 ]; then
+	java jar $4 "$outputPath/part-m-00000"
 fi
-
-hadoop jar $4 "$outputPath/part-m-00000"
