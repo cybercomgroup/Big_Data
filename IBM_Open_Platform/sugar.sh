@@ -8,21 +8,22 @@
 
 if [ $# -lt 3 ]; then
 	echo "Missing required arguments [MapReduce] [Input] [Output]"
-	exit
+	exit 1
 fi
 
 if [[ ! -f $1 ]]; then
 	echo "MapReduce jar does not exist"
-	exit
+	exit 1
 fi
 
-if [ hadoop fs -test -d $2 != 0 ]; then
-	echo "Input directory does not exist
-	exit
+hadoop fs -test -d $2
+if [ $? != 0 ]; then
+	echo "Input directory does not exist"
+	exit 1
 fi
 
-now = date + "%d-%m-%y_%H:%M:%S"
-outputPath = "$3/$now"
+now=$(date +"%d-%m-%Y_%H.%M.%S")
+outputPath="$3/$now/"
 
 hadoop jar $1 $2 $outputPath
 
