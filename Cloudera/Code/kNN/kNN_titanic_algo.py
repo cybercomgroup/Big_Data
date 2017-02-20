@@ -5,8 +5,8 @@ from sklearn.feature_selection import RFE
 from sklearn import preprocessing, cross_validation, neighbors
 import warnings
 """
-Script that tells you what the worst feature to have in your trainset is
-only tests to remove one, will proably make it test more in the future
+Script that tells you what the worst feature to have in your train set it
+only tests to remove one, will probably  make it test more in the future
 Nevertheless the basic idea, is their on how feature select with cross validation
 works
 
