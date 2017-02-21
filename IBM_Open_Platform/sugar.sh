@@ -28,5 +28,5 @@ outputPath="$3/$now/"
 hadoop jar $1 $2 $outputPath
 
 if [ $# -eq 4 ]; then
-	java jar $4 "$outputPath/part-m-00000"
+	hadoop jar $4 "$outputPath/part-m-00000"
 fi
