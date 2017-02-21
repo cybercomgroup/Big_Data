@@ -14,7 +14,8 @@ public class TitanicWeka {
     public static void main(String[] args) throws Exception {
         // load data
         ArffLoader loader = new ArffLoader();
-        Path path = new Path("hdfs://eren.tamazin.com:8081/"+ args[0]);
+        //Path path = new Path("hdfs://eren.tamazin.com:8081/"+ args[0]);
+        Path path = new Path("hdfs://computer1.philiplaine.com:8020/"+ args[0]);
         FileSystem fs = FileSystem.get(new Configuration());
         loader.setSource(fs.open(path));
 

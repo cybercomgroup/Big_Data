@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TitanicMapReduce.iml" filepath="$PROJECT_DIR$/TitanicMapReduce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TitanicWeka.iml" filepath="$PROJECT_DIR$/TitanicWeka.iml" />
     </modules>
   </component>
 </project>
