@@ -25,7 +25,7 @@ del train_set["Survived"]
 ###End data preparation
 
 ##Selftest
-machine=svm.SVC(kernel='linear')
+machine=svm.SVC()
 machine.fit(train_set.values, titanic_results.values)
 predicted_survival=machine.predict(train_set.values)
 
@@ -58,12 +58,11 @@ untouchedTest=untouchedTest["PassengerId"]
 untouchedTest.columns=["PassengerId"]
 
 predictionDF=pd.DataFrame(test_prediction, np.arange(len(test_prediction)),columns=["Survived"])
+print(untouchedTest)
+
 
 joinedDF=pd.concat([untouchedTest,predictionDF], axis=1)
-joinedDF.to_csv("linear_prediction.csv",index=False)
-
-coeficientDF=pd.DataFrame(machine.coef_, np.arange(len(machine.coef_)),columns=["Pclass","Sex","Age","SibSp","Parch","Fare","Embarked"])
-
-coeficientDF.to_csv("linear_coeficients.csv", index=False)
+joinedDF.to_csv("predicted.csv",index=False)
 
 ###End Predict
+

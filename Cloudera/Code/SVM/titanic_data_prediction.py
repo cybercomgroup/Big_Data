@@ -58,7 +58,6 @@ untouchedTest=untouchedTest["PassengerId"]
 untouchedTest.columns=["PassengerId"]
 
 predictionDF=pd.DataFrame(test_prediction, np.arange(len(test_prediction)),columns=["Survived"])
-print(untouchedTest)
 
 
 joinedDF=pd.concat([untouchedTest,predictionDF], axis=1)
