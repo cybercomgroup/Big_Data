@@ -46,7 +46,7 @@ import re
 class Song:
     songCount = 0
     # songDictionary = {}
-F
+
     def __init__(self, songID):
         self.id = songID
         Song.songCount += 1
@@ -71,48 +71,44 @@ F
         self.timeSignatureConfidence = None
         self.title = None
         self.year = None
-
-	##########Added by us!
-	self.familiarity = None
-	self.artist_mbid = None
-	self.artist_playmeid = None
-	self.artist_7digid = None
-	self.hottness = None
-	self.song_hottness = None
-	self.7digitalid = None
-	self.similar_artists = None
-	self.artist_terms = None
-	self.art_terms_freq = None
-	self.art_terms_weight = None
-	self.a_sample_rate = None
-	self.audio_md5 = None
-	self.end_of_fade_in = None
-	self.energy = None
-	self.loudness = None
-	self.mode = None
-	self.mode_conf = None
-	self.start_of_fade_out = None
-	self.trackid = None
-	self.segm_start = None
-	self.segm_conf = None
-	self.segm_pitch = None
-	self.segm_timbre = None
-	self.segm_max_loud = None
-	self.segm_max_loud_time = None
-	self.segm_loud_start = None
-	self.sect_start = None
-	self.sect_conf = None
-	self.beats_start = None
-	self.beats_conf = None
-	self.bars_start = None
-	self.bars_conf = None
-	self.tatums_start = None
-	self.tatums_conf = None
-	self.artist_mbtags = None
-	self.artist_mbtags_count = None
-	
-	
-	
+        ##########Added by us!
+        self.familiarity = None
+        self.artist_mbid = None
+        self.artist_playmeid = None
+        self.artist_7digid = None
+        self.hottness = None
+        self.song_hottness = None
+        self.digitalid7 = None
+        self.similar_artists = None
+        self.artist_terms = None
+        self.art_terms_freq = None
+        self.art_terms_weight = None
+        self.a_sample_rate = None
+        self.audio_md5 = None
+        self.end_of_fade_in = None
+        self.energy = None
+        self.loudness = None
+        self.mode = None
+        self.mode_conf = None
+        self.start_of_fade_out = None
+        self.trackid = None
+        self.segm_start = None
+        self.segm_conf = None
+        self.segm_pitch = None
+        self.segm_timbre = None
+        self.segm_max_loud = None
+        self.segm_max_loud_time = None
+        self.segm_loud_start = None
+        self.sect_start = None
+        self.sect_conf = None
+        self.beats_start = None
+        self.beats_conf = None
+        self.bars_start = None
+        self.bars_conf = None
+        self.tatums_start = None
+        self.tatums_conf = None
+        self.artist_mbtags = None
+        self.artist_mbtags_count = None
 
     def displaySongCount(self):
         print ("Total Song Count %i" % Song.songCount)
@@ -187,79 +183,79 @@ def main():
                     csvRowString += 'Title'
                 elif attribute == 'Year'.lower():
                     csvRowString += 'Year'
-		elif attribute == 'Familiarity'.lower():			####Added by us!
+                elif attribute == 'Familiarity'.lower():                        ####Added by us!
                     csvRowString += song.familiarity
-		elif attribute == 'artist_mbid'.lower():
+                elif attribute == 'artist_mbid'.lower():
                     csvRowString += song.artist_mbid
-		elif attribute == 'artist_playmeid'.lower():
+                elif attribute == 'artist_playmeid'.lower():
                     csvRowString += song.artist_playmeid
-		elif attribute == 'artist_7digid'.lower():
+                elif attribute == 'artist_7digid'.lower():
                     csvRowString += song.artist_7digid
-		elif attribute == 'hottness'.lower():
+                elif attribute == 'hottness'.lower():
                     csvRowString += song.hottness
-		elif attribute == 'song_hottness'.lower():
+                elif attribute == 'song_hottness'.lower():
                     csvRowString += song.song_hottness
-		elif attribute == '7digitalid'.lower():
-                    csvRowString += song.7digitalid
-		elif attribute == 'similar_artists'.lower():
+                elif attribute == 'digitalid7'.lower():
+                    csvRowString += song.digitalid7
+                elif attribute == 'similar_artists'.lower():
                     csvRowString += song.similar_artists
-		elif attribute == 'artist_terms'.lower():
+                elif attribute == 'artist_terms'.lower():
                     csvRowString += song.artist_terms
-		elif attribute == 'art_terms_freq'.lower():
+                elif attribute == 'art_terms_freq'.lower():
                     csvRowString += song.art_terms_freq
-		elif attribute == 'art_terms_weight'.lower():
+                elif attribute == 'art_terms_weight'.lower():
                     csvRowString += song.art_terms_weight
-		elif attribute == 'a_sample_rate'.lower():
+                elif attribute == 'a_sample_rate'.lower():
                     csvRowString += song.a_sample_rate
-		elif attribute == 'audio_md5'.lower():
+                elif attribute == 'audio_md5'.lower():
                     csvRowString += song.audio_md5
-		elif attribute == 'end_of_fade_in'.lower():
+                elif attribute == 'end_of_fade_in'.lower():
                     csvRowString += song.end_of_fade_in
-		elif attribute == 'energy'.lower():
+                elif attribute == 'energy'.lower():
                     csvRowString += song.energy
-		elif attribute == 'loudness'.lower():
+                elif attribute == 'loudness'.lower():
                     csvRowString += song.loudness
-		elif attribute == 'mode'.lower():
+                elif attribute == 'mode'.lower():
                     csvRowString += song.mode
-		elif attribute == 'mode_conf'.lower():
+                elif attribute == 'mode_conf'.lower():
                     csvRowString += song.mode_conf
-		elif attribute == 'start_of_fade_out'.lower():
+                elif attribute == 'start_of_fade_out'.lower():
                     csvRowString += song.start_of_fade_out
-		elif attribute == 'trackid'.lower():
+                elif attribute == 'trackid'.lower():
                     csvRowString += song.trackid
-		elif attribute == 'segm_start'.lower():
+                elif attribute == 'segm_start'.lower():
                     csvRowString += song.segm_start
-		elif attribute == 'segm_conf'.lower():
+                elif attribute == 'segm_conf'.lower():
                     csvRowString += song.segm_conf
-		elif attribute == 'segm_pitch'.lower():
+                elif attribute == 'segm_pitch'.lower():
                     csvRowString += song.segm_pitch
-		elif attribute == 'segm_timbre'.lower():
+                elif attribute == 'segm_timbre'.lower():
                     csvRowString += song.segm_timbre
-		elif attribute == 'segm_max_loud'.lower():
+                elif attribute == 'segm_max_loud'.lower():
                     csvRowString += song.segm_max_loud
-		elif attribute == 'segm_max_loud_time'.lower():
+                elif attribute == 'segm_max_loud_time'.lower():
                     csvRowString += song.segm_max_loud_time
-		elif attribute == 'segm_loud_start'.lower():
+                elif attribute == 'segm_loud_start'.lower():
                     csvRowString += song.segm_loud_start
-		elif attribute == 'sect_start'.lower():
+                elif attribute == 'sect_start'.lower():
                     csvRowString += song.sect_start
-		elif attribute == 'sect_conf'.lower():
+                elif attribute == 'sect_conf'.lower():
                     csvRowString += song.sect_conf
-		elif attribute == 'beats_start'.lower():
+                elif attribute == 'beats_start'.lower():
                     csvRowString += song.beats_start
-		elif attribute == 'beats_conf'.lower():
+                elif attribute == 'beats_conf'.lower():
                     csvRowString += song.beats_conf
-		elif attribute == 'bars_start'.lower():
+                elif attribute == 'bars_start'.lower():
                     csvRowString += song.bars_start
-		elif attribute == 'bars_conf'.lower():
+                elif attribute == 'bars_conf'.lower():
                     csvRowString += song.bars_conf
-		elif attribute == 'tatums_start'.lower():
+                elif attribute == 'tatums_start'.lower():
                     csvRowString += song.tatums_start
-		elif attribute == 'tatums_conf'.lower():
+                elif attribute == 'tatums_conf'.lower():
                     csvRowString += song.tatums_conf
-		elif attribute == 'artist_mbtags'.lower():
+                elif attribute == 'artist_mbtags'.lower():
                     csvRowString += song.artist_mbtags
-		elif attribute == 'artist_mbtags_count'.lower():
+                elif attribute == 'artist_mbtags_count'.lower():
                     csvRowString += song.artist_mbtags_count
                 elif attribute == 'Exit'.lower():
                     sys.exit()
@@ -286,87 +282,8 @@ def main():
         csvRowString = ("SongID,AlbumID,AlbumName,ArtistID,ArtistLatitude,ArtistLocation,"+
             "ArtistLongitude,ArtistName,Danceability,Duration,KeySignature,"+
             "KeySignatureConfidence,Tempo,TimeSignature,TimeSignatureConfidence,"+
-            		     		  "Title,Year,Familiarity,Artist_Mbid,Artist_PlaymeId,Artist_7didId,Hottness, Song_Hottness,7digitalid,Similar_Artists,Artist_Terms,Art_Terms_Freq,Art_Terms_Weight,A_Sample_Rate,Audio_Md5,End_Of_Fade_In,Energy,Loudness,Mode,Mode_Conf,Start_Of_Fade_Out,TrackId,Segm_Start,Segm_Conf,Segm_Pitch,Segm_Timbre,Segm_Max_Loud,Segm_Max_Loud_Time,Segm_Loud_Start,Sect_Start,Sect_Conf,Beats_Start,Beats_Conf,Bars_Start,Bars_Conf,Tatums_Start,Tatums_Conf,Artist_Mbtags,Artist_Mbtags_Count")
-
+            "Title,Year,Familiarity,Artist_Mbid,Artist_PlaymeId,Artist_7didId,Hottness, Song_Hottness,7digitalid,Similar_Artists,Artist_Terms,Art_Terms_Freq,Art_Terms_Weight,A_Sample_Rate,Audio_Md5,End_Of_Fade_In,Energy,Loudness,Mode,Mode_Conf,Start_Of_Fade_Out,TrackId,Segm_Start,Segm_Conf,Segm_Pitch,Segm_Timbre,Segm_Max_Loud,Segm_Max_Loud_Time,Segm_Loud_Start,Sect_Start,Sect_Conf,Beats_Start,Beats_Conf,Bars_Start,Bars_Conf,Tatums_Start,Tatums_Conf,Artist_Mbtags,Artist_Mbtags_Count")
         #################################################
-
-	self.familiarity = None
-	self.artist_mbid = None
-	self.artist_playmeid = None
-	self.artist_7digid = None
-	self.hottness = None
-	self.song_hottness = None
-	self.7digitalid = None
-	self.similar_artists = None
-	self.artist_terms = None
-	self.art_terms_freq = None
-	self.art_terms_weight = None
-	self.a_sample_rate = None
-	self.audio_md5 = None
-	self.end_of_fade_in = None
-	self.energy = None
-	self.loudness = None
-	self.mode = None
-	self.mode_conf = None
-	self.start_of_fade_out = None
-	self.trackid = None
-	self.segm_start = None
-	self.segm_conf = None
-	self.segm_pitch = None
-	self.segm_timbre = None
-	self.segm_max_loud = None
-	self.segm_max_loud_time = None
-	self.segm_loud_start = None
-	self.sect_start = None
-	self.sect_conf = None
-	self.beats_start = None
-	self.beats_conf = None
-	self.bars_start = None
-	self.bars_conf = None
-	self.tatums_start = None
-	self.tatums_conf = None
-	self.artist_mbtags = None
-	self.artist_mbtags_count = None
-
-	##########Added by us!
-	self.familiarity = None
-	self.artist_mbid = None
-	self.artist_playmeid = None
-	self.artist_7digid = None
-	self.hottness = None
-	self.song_hottness = None
-	self.7digitalid = None
-	self.similar_artists = None
-	self.artist_terms = None
-	self.art_terms_freq = None
-	self.art_terms_weight = None
-	self.a_sample_rate = None
-	self.audio_md5 = None
-	self.end_of_fade_in = None
-	self.energy = None
-	self.loudness = None
-	self.mode = None
-	self.mode_conf = None
-	self.start_of_fade_out = None
-	self.trackid = None
-	self.segm_start = None
-	self.segm_conf = None
-	self.segm_pitch = None
-	self.segm_timbre = None
-	self.segm_max_loud = None
-	self.segm_max_loud_time = None
-	self.segm_loud_start = None
-	self.sect_start = None
-	self.sect_conf = None
-	self.beats_start = None
-	self.beats_conf = None
-	self.bars_start = None
-	self.bars_conf = None
-	self.tatums_start = None
-	self.tatums_conf = None
-	self.artist_mbtags = None
-	self.artist_mbtags_count = None
-
 
         csvAttributeList = re.split('\W+', csvRowString)
         for i, v in enumerate(csvAttributeList):
@@ -380,7 +297,7 @@ def main():
 
     #Set the basedir here, the root directory from which the search
     #for files stored in a (hierarchical data structure) will originate
-    basedir = "/home/bigdata/t_dataset/" # "." As the default means the current directory
+    basedir = "/home/bigdata/smalltest/" # "." As the default means the current directory
     ext = ".h5" #Set the extension here. H5 is the extension for HDF5 files.
     #################################################
 
@@ -415,51 +332,46 @@ def main():
             song.timeSignature = str(hdf5_getters.get_time_signature(songH5File))
             song.timeSignatureConfidence = str(hdf5_getters.get_time_signature_confidence(songH5File))
             song.title = str(hdf5_getters.get_title(songH5File))
-            song.year = str(hdf5_getters.get_year(songH5File))'
-
-	    #########Added by us!
-	    song.familiarity = str(hdf5_getters.get_artist_familiarity(songH5File))
-	    song.artist_mbid = str(hdf5_getters.get_artist_mbid(songH5File))
-	    song.artist_playmeid = str(hdf5_getters.get_artist_playmeid(songH5File))
-	    song.artist_7digid = str(hdf5_getters.get_artist_7digitalid(songH5File))
-	    song.hottness = str(hdf5_getters.get_artist_hotttnesss(songH5File))
-	    song.song_hottness = str(hdf5_getters.get_song_hotttnesss(songH5File))
-	    song.7digitalid = str(hdf5_getters.get_track_7digitalid(songH5File))
-	    song.similar_artists = str(hdf5_getters.get_similar_artists(songH5File))
-	    song.artist_terms = str(hdf5_getters.get_artist_terms(songH5File))
-	    song.art_terms_freq = str(hdf5_getters.get_artist_terms_freq(songH5File))
-	    song.art_terms_weight = str(hdf5_getters.get_artist_terms_weight(songH5File))
-	    song.a_sample_rate = str(hdf5_getters.get_analysis_sample_rate(songH5File))
-	    song.audio_md5 = str(hdf5_getters.get_audio_md5(songH5File))
-	    song.end_of_fade_in = str(hdf5_getters.get_end_of_fade_in(songH5File))
-	    song.energy = str(hdf5_getters.get_energy(songH5File))
-	    song.loudness = str(hdf5_getters.get_loudness(songH5File))
-	    song.mode = str(hdf5_getters.get_mode(songH5File))
-	    song.mode_conf = str(hdf5_getters.get_mode_confidence(songH5File))
-	    song.start_of_fade_out = str(hdf5_getters.get_start_of_fade_out(songH5File))
-	    song.trackid = str(hdf5_getters.get_track_id(songH5File))
-	    song.segm_start = str(hdf5_getters.get_segments_start(songH5File))
-	    song.segm_conf = str(hdf5_getters.get_segments_confidence(songH5File))
-	    song.segm_pitch = str(hdf5_getters.get_segments_pitches(songH5File))
-	    song.segm_timbre = str(hdf5_getters.get_segments_timbre(songH5File))
-	    song.segm_max_loud = str(hdf5_getters.get_segments_loudness_max(songH5File))
-	    song.segm_max_loud_time = str(hdf5_getters.get_segments_loudness_max_time(songH5File))
-	    song.segm_loud_start = str(hdf5_getters.get_segments_loudness_start(songH5File))
-	    song.sect_start = str(hdf5_getters.get_sections_start(songH5File))
-	    song.sect_conf = str(hdf5_getters.get_sections_confidence(songH5File))
-	    song.beats_start = str(hdf5_getters.get_beats_start(songH5File))
-	    song.beats_conf = str(hdf5_getters.get_beats_confidence(songH5File))
-	    song.bars_start = str(hdf5_getters.get_bars_start(songH5File))
-	    song.bars_conf = str(hdf5_getters.get_bars_confidence(songH5File))
-	    song.tatums_start = str(hdf5_getters.get_tatums_start(songH5File))
-	    song.tatums_conf = str(hdf5_getters.get_tatums_confidence(songH5File))
-	    song.artist_mbtags = str(hdf5_getters.get_artist_mbtags(songH5File))
-	    song.artist_mbtags_count = str(hdf5_getters.get_artist_mbtags_count(songH5File))
-	    
-	    
-	    
-	    
-	    
+            song.year = str(hdf5_getters.get_year(songH5File))
+            
+            #########Added by us!
+            song.familiarity = str(hdf5_getters.get_artist_familiarity(songH5File))
+            song.artist_mbid = str(hdf5_getters.get_artist_mbid(songH5File))
+            song.artist_playmeid = str(hdf5_getters.get_artist_playmeid(songH5File))
+            song.artist_7digid = str(hdf5_getters.get_artist_7digitalid(songH5File))
+            song.hottness = str(hdf5_getters.get_artist_hotttnesss(songH5File))
+            song.song_hottness = str(hdf5_getters.get_song_hotttnesss(songH5File))
+            song.digitalid7 = str(hdf5_getters.get_track_7digitalid(songH5File))
+            song.similar_artists = str(hdf5_getters.get_similar_artists(songH5File))
+            song.artist_terms = str(hdf5_getters.get_artist_terms(songH5File))
+            song.art_terms_freq = str(hdf5_getters.get_artist_terms_freq(songH5File))
+            song.art_terms_weight = str(hdf5_getters.get_artist_terms_weight(songH5File))
+            song.a_sample_rate = str(hdf5_getters.get_analysis_sample_rate(songH5File))
+            song.audio_md5 = str(hdf5_getters.get_audio_md5(songH5File))
+            song.end_of_fade_in = str(hdf5_getters.get_end_of_fade_in(songH5File))
+            song.energy = str(hdf5_getters.get_energy(songH5File))
+            song.loudness = str(hdf5_getters.get_loudness(songH5File))
+            song.mode = str(hdf5_getters.get_mode(songH5File))
+            song.mode_conf = str(hdf5_getters.get_mode_confidence(songH5File))
+            song.start_of_fade_out = str(hdf5_getters.get_start_of_fade_out(songH5File))
+            song.trackid = str(hdf5_getters.get_track_id(songH5File))
+            song.segm_start = str(hdf5_getters.get_segments_start(songH5File))
+            song.segm_conf = str(hdf5_getters.get_segments_confidence(songH5File))
+            song.segm_pitch = str(hdf5_getters.get_segments_pitches(songH5File))
+            song.segm_timbre = str(hdf5_getters.get_segments_timbre(songH5File))
+            song.segm_max_loud = str(hdf5_getters.get_segments_loudness_max(songH5File))
+            song.segm_max_loud_time = str(hdf5_getters.get_segments_loudness_max_time(songH5File))
+            song.segm_loud_start = str(hdf5_getters.get_segments_loudness_start(songH5File))
+            song.sect_start = str(hdf5_getters.get_sections_start(songH5File))
+            song.sect_conf = str(hdf5_getters.get_sections_confidence(songH5File))
+            song.beats_start = str(hdf5_getters.get_beats_start(songH5File))
+            song.beats_conf = str(hdf5_getters.get_beats_confidence(songH5File))
+            song.bars_start = str(hdf5_getters.get_bars_start(songH5File))
+            song.bars_conf = str(hdf5_getters.get_bars_confidence(songH5File))
+            song.tatums_start = str(hdf5_getters.get_tatums_start(songH5File))
+            song.tatums_conf = str(hdf5_getters.get_tatums_confidence(songH5File))
+            song.artist_mbtags = str(hdf5_getters.get_artist_mbtags(songH5File))
+            song.artist_mbtags_count = str(hdf5_getters.get_artist_mbtags_count(songH5File))
 
             #print song count
             csvRowString += str(song.songCount) + ","
@@ -514,79 +426,79 @@ def main():
                     csvRowString += "\"" + song.title + "\""
                 elif attribute == 'Year'.lower():
                     csvRowString += song.year
-		elif attribute == 'Familiarity'.lower():			####Added by us!
+                elif attribute == 'Familiarity'.lower():                        ####Added by us!
                     csvRowString += song.familiarity
-		elif attribute == 'artist_mbid'.lower():
+                elif attribute == 'artist_mbid'.lower():
                     csvRowString += song.artist_mbid
-		elif attribute == 'artist_playmeid'.lower():
+                elif attribute == 'artist_playmeid'.lower():
                     csvRowString += song.artist_playmeid
-		elif attribute == 'artist_7digid'.lower():
+                elif attribute == 'artist_7digid'.lower():
                     csvRowString += song.artist_7digid
-		elif attribute == 'hottness'.lower():
+                elif attribute == 'hottness'.lower():
                     csvRowString += song.hottness
-		elif attribute == 'song_hottness'.lower():
+                elif attribute == 'song_hottness'.lower():
                     csvRowString += song.song_hottness
-		elif attribute == '7digitalid'.lower():
-                    csvRowString += song.7digitalid
-		elif attribute == 'similar_artists'.lower():
+                elif attribute == 'digitalid7'.lower():
+                    csvRowString += song.digitalid7
+                elif attribute == 'similar_artists'.lower():
                     csvRowString += song.similar_artists
-		elif attribute == 'artist_terms'.lower():
+                elif attribute == 'artist_terms'.lower():
                     csvRowString += song.artist_terms
-		elif attribute == 'art_terms_freq'.lower():
+                elif attribute == 'art_terms_freq'.lower():
                     csvRowString += song.art_terms_freq
-		elif attribute == 'art_terms_weight'.lower():
+                elif attribute == 'art_terms_weight'.lower():
                     csvRowString += song.art_terms_weight
-		elif attribute == 'a_sample_rate'.lower():
+                elif attribute == 'a_sample_rate'.lower():
                     csvRowString += song.a_sample_rate
-		elif attribute == 'audio_md5'.lower():
+                elif attribute == 'audio_md5'.lower():
                     csvRowString += song.audio_md5
-		elif attribute == 'end_of_fade_in'.lower():
+                elif attribute == 'end_of_fade_in'.lower():
                     csvRowString += song.end_of_fade_in
-		elif attribute == 'energy'.lower():
+                elif attribute == 'energy'.lower():
                     csvRowString += song.energy
-		elif attribute == 'loudness'.lower():
+                elif attribute == 'loudness'.lower():
                     csvRowString += song.loudness
-		elif attribute == 'mode'.lower():
+                elif attribute == 'mode'.lower():
                     csvRowString += song.mode
-		elif attribute == 'mode_conf'.lower():
+                elif attribute == 'mode_conf'.lower():
                     csvRowString += song.mode_conf
-		elif attribute == 'start_of_fade_out'.lower():
+                elif attribute == 'start_of_fade_out'.lower():
                     csvRowString += song.start_of_fade_out
-		elif attribute == 'trackid'.lower():
+                elif attribute == 'trackid'.lower():
                     csvRowString += song.trackid
-		elif attribute == 'segm_start'.lower():
+                elif attribute == 'segm_start'.lower():
                     csvRowString += song.segm_start
-		elif attribute == 'segm_conf'.lower():
+                elif attribute == 'segm_conf'.lower():
                     csvRowString += song.segm_conf
-		elif attribute == 'segm_pitch'.lower():
+                elif attribute == 'segm_pitch'.lower():
                     csvRowString += song.segm_pitch
-		elif attribute == 'segm_timbre'.lower():
+                elif attribute == 'segm_timbre'.lower():
                     csvRowString += song.segm_timbre
-		elif attribute == 'segm_max_loud'.lower():
+                elif attribute == 'segm_max_loud'.lower():
                     csvRowString += song.segm_max_loud
-		elif attribute == 'segm_max_loud_time'.lower():
+                elif attribute == 'segm_max_loud_time'.lower():
                     csvRowString += song.segm_max_loud_time
-		elif attribute == 'segm_loud_start'.lower():
+                elif attribute == 'segm_loud_start'.lower():
                     csvRowString += song.segm_loud_start
-		elif attribute == 'sect_start'.lower():
+                elif attribute == 'sect_start'.lower():
                     csvRowString += song.sect_start
-		elif attribute == 'sect_conf'.lower():
+                elif attribute == 'sect_conf'.lower():
                     csvRowString += song.sect_conf
-		elif attribute == 'beats_start'.lower():
+                elif attribute == 'beats_start'.lower():
                     csvRowString += song.beats_start
-		elif attribute == 'beats_conf'.lower():
+                elif attribute == 'beats_conf'.lower():
                     csvRowString += song.beats_conf
-		elif attribute == 'bars_start'.lower():
+                elif attribute == 'bars_start'.lower():
                     csvRowString += song.bars_start
-		elif attribute == 'bars_conf'.lower():
+                elif attribute == 'bars_conf'.lower():
                     csvRowString += song.bars_conf
-		elif attribute == 'tatums_start'.lower():
+                elif attribute == 'tatums_start'.lower():
                     csvRowString += song.tatums_start
-		elif attribute == 'tatums_conf'.lower():
+                elif attribute == 'tatums_conf'.lower():
                     csvRowString += song.tatums_conf
-		elif attribute == 'artist_mbtags'.lower():
+                elif attribute == 'artist_mbtags'.lower():
                     csvRowString += song.artist_mbtags
-		elif attribute == 'artist_mbtags_count'.lower():
+                elif attribute == 'artist_mbtags_count'.lower():
                     csvRowString += song.artist_mbtags_count
                 else:
                     csvRowString += "Erm. This didn't work. Error. :( :(\n"
@@ -603,5 +515,5 @@ def main():
             songH5File.close()
 
     outputFile1.close()
-	
+        
 main()
