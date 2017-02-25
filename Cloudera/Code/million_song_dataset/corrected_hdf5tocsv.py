@@ -282,7 +282,8 @@ def main():
         csvRowString = ("\"SongID\",\"AlbumID\",\"AlbumName\",\"ArtistID\",\"ArtistLatitude\",\"ArtistLocation\",\"ArtistLongitude\",\"ArtistName\",\"Danceability\",\"Duration\",\"KeySignature\",\"KeySignatureConfidence\",\"Tempo\",\"TimeSignature\",\"TimeSignatureConfidence\",\"Title\",\"Year\",\"Familiarity\",\"Artist_Mbid\",\"Artist_PlaymeId\",\"Artist_7didId\",\"Hottness\",\"Song_Hottness\",\"7digitalid\",\"A_Sample_Rate\",\"Audio_Md5\",\"End_Of_Fade_In\",\"Energy\",\"Loudness\",\"Mode\",\"Mode_Conf\",\"Start_Of_Fade_Out\",\"TrackId\"")
         #################################################
 
-        csvAttributeList = re.split('\W+', csvRowString)
+        csvAttributeList = re.split(',', csvRowString)
+        print(csvAttributeList)
         for i, v in enumerate(csvAttributeList):
             csvAttributeList[i] = csvAttributeList[i].lower()
         outputFile1.write("\"SongNumber\",");
@@ -307,7 +308,7 @@ def main():
             songH5File = hdf5_getters.open_h5_file_read(f)
             song = Song(str(hdf5_getters.get_song_id(songH5File)))
 
-            testDanceability = hdf5_getters.get_danceability(songH5File)
+            # testDanceability = hdf5_getters.get_danceability(songH5File)
             # print type(testDanceability)
             # print ("Here is the danceability: ") + str(testDanceability)
 
