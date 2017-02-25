@@ -1,108 +1,54 @@
 "SongNumber","SongID","AlbumID","AlbumName","ArtistID","ArtistLatitude","ArtistLocation","ArtistLongitude","ArtistName","Danceability","Duration","KeySignature","KeySignatureConfidence","Tempo","TimeSignature","TimeSignatureConfidence","Title","Year","Familiarity","Artist_Mbid","Artist_PlaymeId","Artist_7didId","Hottness","Song_Hottness","7digitalid","A_Sample_Rate","Audio_Md5","End_Of_Fade_In","Energy","Loudness","Mode","Mode_Conf","Start_Of_Fade_Out","TrackId"
-
 1,"b'SOFRDWL12A58A7CEF7'",563858,"b'A Bad Azz Mix Tape IV'","b'AR9Q9YC1187FB5609B'",,"b'New Jersey'",,"b'Quest_ Pup_ Kevo'",0.0,252.94322,6,0.063,161.99,4,0.253,"b'Hit Da Scene'",0,0.0131579730569,"b'c5128948-7854-4418-a8d5-e3fc8d57c881'",194909,"Error. :( :(",0.379282374332,,"Error. :( :(",22050,"b'0d744f90fb48e32cd64556a4c8609ace'",0.0,0.0,-7.227,0,0.4,247.455,"b'TRAAACN128F9355673'"
-
 2,"b'SOMZWCG12A8C13C480'",300848,"b'Fear Itself'","b'ARD7TVE1187B99BFB1'",,"b'California - LA'",,"b'Casual'",0.0,218.93179,1,0.736,92.198,4,0.778,"b"I Didn't Mean To"",0,0.581793765845,"b'e77e51a5-4761-45b3-9847-2051f811e366'",4479,"Error. :( :(",0.401997543364,0.602119989906,"Error. :( :(",22050,"b'a222795e07cd65b7a530f1346f520649'",0.247,0.0,-11.197,0,0.636,218.932,"b'TRAAAAW128F429D538'"
-
 3,"b'SONRWUU12AF72A4283'",279219,"b'Bring Ya To The Brink'","b'ARGE7G11187FB37E05'",,"b'Brooklyn NY'",,"b'Cyndi Lauper'",0.0,240.63955,9,0.608,123.989,4,0.8,"b'Into The Nightlife'",2008,0.712886029823,"b'7bd9e20e-74b9-446a-a2ed-a223f82a36e7'",382,"Error. :( :(",0.55925726175,,"Error. :( :(",22050,"b'7573fabe891b25bcd3c5866e4c5df1f0'",4.487,0.0,-7.322,0,0.495,240.64,"b'TRAAAGR128F425B14B'"
-
 4,"b'SOUCVHW12AB018E830'",763937,"b"I Don't Speak The Language"","b'ARJJ8611187FB5321F'",40.79086,"b'New York NY [Manhattan]'",-73.96644,"b'Matthew Wilder'",0.0,184.47628,10,0.456,110.129,4,0.711,"b'Break My Stride'",1983,0.546101817437,"b'471e21ab-7a14-4190-a9d2-f95197616df4'",36027,"Error. :( :(",0.383786778738,,"Error. :( :(",22050,"b'facaf1c26c48d98e6b20c54b4d02051b'",0.682,0.0,-11.137,1,0.442,167.607,"b'TRAAAZF12903CCCF6B'"
-
 5,"b'SOGVJUR12A8C13485C'",87659,"b'It Could Ruin Your Day'","b'ARLB9PJ1187B9AC984'",,"b''",,"b'Chokebore'",0.0,163.99628,7,0.291,179.677,4,1.0,"b'Popular Modern Themes'",1996,0.564625549161,"b'e7680f97-5a8b-48d4-8c36-a0e1f01bf239'",154556,"Error. :( :(",0.374066127659,,"Error. :( :(",22050,"b'cfd48f2cc45ba588485031959cc79e28'",0.0,0.0,-10.212,1,0.51,156.526,"b'TRAAAYX128F4263BC0'"
-
 6,"b'SOZIULX12A8AE46C39'",136767,"b'Surrender!'","b'ARGO8611187B990AF9'",64.55653,"b'Charleston SC'",12.66538,"b'Super Deluxe'",0.0,222.35383,5,0.763,100.812,4,0.0,"b'Come On (Album Version)'",0,0.531334211069,"b'c795a5df-7327-4375-b39f-89b6141b827f'",-1,"Error. :( :(",0.33828981594,,"Error. :( :(",22050,"b'ce98ef30679c3bd17c4ea71da84ac9e0'",3.471,0.0,-5.232,1,0.55,213.206,"b'TRAAACV128F423E09E'"
-
 7,"b'SOBLFFE12AF72AA5BA'",497103,"b'Adelitas Way'","b'ARJNIUY12298900C91'",,"b''",,"b'Adelitas Way'",0.0,213.9424,1,0.349,99.944,4,0.846,"b'Scream'",2009,0.639902515496,"b'6ae6a016-91d7-46cc-be7d-5e8e5d320c54'",166043,"Error. :( :(",0.461318337541,0.733371619962,"Error. :( :(",22050,"b'7b6557889cc46b202300a4baf902e229'",0.0,0.0,-4.769,1,0.403,210.048,"b'TRAAAAK128F9318786'"
-
 8,"b'SOROXIB12A8C135F80'",152405,"b'Much Loved Music (Vols. 1 & 2)'","b'ARKTJBI1257509B72E'",,"b''",,"b'Halle/Hughes'",0.0,296.46322,7,0.685,165.398,4,0.402,"b'Valse Triste (Kuolema Op 44)'",0,0.480114339409,"b''",-1,"Error. :( :(",0.295156623536,,"Error. :( :(",22050,"b'509305a801621d64e3aa7507d2674554'",16.985,0.0,-32.411,1,0.61,262.792,"b'TRAAAKO128F426441E'"
-
 9,"b'SONHOTT12A8C13493C'",287650,"b'Friend Or Foe'","b'AR7G5I41187FB4CE6C'",,"b'London England'",,"b'Adam Ant'",0.0,233.40363,0,0.751,119.293,4,0.0,"b'Something Girls'",1982,0.630382334147,"b'e188a520-9cb7-4f73-a3d7-2f70c6538e92'",12697,"Error. :( :(",0.454231156571,,"Error. :( :(",22050,"b'43cd1abd45d5a2dda16a3c65b4963bd4'",0.0,0.0,-9.013,1,0.749,217.124,"b'TRAAAEF128F4273421'"
-
 10,"b'SOHOZBI12A8C132E3C'",104925,"b'Survival Sickness'","b'AR0MWD61187B9B2B12'",,"b''",,"b'International Noise Conspiracy'",0.0,195.39546,0,0.451,148.957,4,0.144,"b'Smash It Up'",2000,0.692989555403,"b'97da5eb3-79a5-4195-b98e-3d10ef946b08'",-1,"Error. :( :(",0.41428334313,0.767828738594,"Error. :( :(",22050,"b'949d74e412aadc2ed040eff9539a64ce'",2.305,0.0,-8.598,1,0.375,184.953,"b'TRAAAUR128F428B1FA'"
-
 11,"b'SOAPERH12A58A787DC'",18781,"b'The Best Of Snoop Dogg'","b'ARZ5H0P1187B98A1DD'",33.76672,"b'Long Beach CA'",-118.1924,"b'Snoop Dogg'",0.0,230.42567,8,0.564,96.897,4,1.0,"b'The One And Only (Edited)'",0,0.853831633625,"b'f90e8b26-9e52-4669-a5c9-e28529c47894'",10376,"Error. :( :(",0.608910282835,,"Error. :( :(",22050,"b'48cb2325d54807d2c11bada6ebeb5429'",0.27,0.0,-3.96,0,0.555,221.965,"b'TRAAAHZ128E0799171'"
-
 12,"b'SOSMJFC12A8C13DE0C'",166134,"b'Doll In The Box'","b'AR1KTV21187B9ACD72'",34.05349,"b'California - LA'",-118.24532,"b'Cristina'",0.0,343.87546,0,0.224,142.31,4,1.0,"b'Is That All There Is?'",0,0.511313477552,"b'da51d3a0-175f-4caf-8a61-d32357d0efd3'",56305,"Error. :( :(",0.336490715546,0.599660357626,"Error. :( :(",22050,"b'5c499926ba36defd9af141c5f44acb9f'",0.12,0.0,-5.054,1,0.177,337.334,"b'TRAAANK128F428B515'"
-
 13,"b'SOIOAJO12A6D4FA067'",123820,"b'Honey Bee'","b'AR0NDTG1187FB391CA'",35.9125,"b'Sliema Malta'",14.5018,"b'Moose'",0.0,205.66159,2,0.71,202.363,3,1.0,"b'Stop Laughing'",0,0.526345159681,"b'4df32f11-7744-4569-a466-4c65fa4f5a8a'",159176,"Error. :( :(",0.392368372263,0.349119964652,"Error. :( :(",22050,"b'a0ffc3104e7a70e0da0945020dc34a5d'",4.249,0.0,-11.462,1,0.602,194.183,"b'TRAAAZU128F4226F7A'"
-
 14,"b'SOUDSGM12AC9618304'",692313,"b'Superinstrumental'","b'ARNTLGG11E2835DDB9'",,"b''",,"b'Clp'",0.0,266.39628,7,0.053,114.041,4,0.878,"b'Insatiable (Instrumental Version)'",0,0.550513697848,"b'4d96f7d0-2f0e-4e92-ba70-a405f96f8cec'",-1,"Error. :( :(",0.422705641029,,"Error. :( :(",22050,"b'c76afe800148e674a30629a4686d7f9f'",0.084,0.0,-6.697,0,0.473,261.747,"b'TRAAAVG12903CFA543'"
-
 15,"b'SOKDFIV12A6D4F9398'",60463,"b'The Mushroom Tapes'","b'AR421FM1187B997AF4'",,"b''",,"b'The Badloves'",0.0,324.93669,11,0.0,89.813,4,0.0,"b'Slave'",1996,0.449835546282,"b'e7973c65-1ebb-40c0-9141-6807a4753a0c'",-1,"Error. :( :(",0.297260011957,,"Error. :( :(",22050,"b'fee0e8b1737d6ea57f8ec8c13fb87dd8'",0.0,0.0,-6.671,0,0.35,301.285,"b'TRAAAIC128F14A5138'"
-
 16,"b'SOIGHOD12A8C13B5A1'",260251,"b'Mutiny Sunshine'","b'ARY589G1187B9A9F4E'",45.51179,"b'Portland OR'",-122.67563,"b'Talkdemonic'",0.0,171.57179,4,0.104,127.503,1,0.487,"b'Indian Angel'",2004,0.58581405199,"b'cffb263e-f6af-4127-b783-f4bbf28cad0c'",-1,"Error. :( :(",0.401116039188,0.614752357554,"Error. :( :(",22050,"b'd51092a16b2c4003e30c82a7c7cc5624'",0.0,0.0,-14.015,0,0.102,155.429,"b'TRAAAYL128F4271A5B'"
-
 17,"b'SOERIDA12A6D4F8506'",41248,"b'Paris'","b'ARBZIN01187FB362CC'",1.32026,"b'27'",103.78871,"b'Paris Hilton'",0.0,192.28689,6,0.312,112.031,4,0.0,"b'I Want You (Album Version)'",2006,0.711293276173,"b'0d9ff9c7-394e-4228-93aa-c4afd4765324'",-1,"Error. :( :(",0.562610443079,0.711373403428,"Error. :( :(",22050,"b'39ea2523d2c4902e908aaaa5574ef4bd'",0.0,0.0,-3.648,0,0.47,188.912,"b'TRAAAIR128F1480971'"
-
 18,"b'SOCSNVI12A8C13ECC2'",244077,"b'Be a Brother'","b'ARC73361187B9B42BD'",37.77916,"b'San Francisco CA'",-122.42005,"b'Big Brother & The Holding Company'",0.0,396.35546,7,0.195,136.768,1,0.0,"b'Heartache People'",1970,0.627827825331,"b'3cf5a3be-25ef-4408-98fe-e66fee536be1'",13029,"Error. :( :(",0.387616855902,0.3759843015,"Error. :( :(",22050,"b'08486100fcda19acca1f4ba6c639f5b4'",0.499,0.0,-13.225,1,0.421,386.728,"b'TRAAADJ128F4287B47'"
-
 19,"b'SOMJBYD12A6D4F8557'",25824,"b'Da Ghetto Psychic'","b'ARD0S291187B9B7BF5'",,"b'Ohio'",,"b'Rated R'",0.0,114.78159,1,0.0,111.787,1,0.0,"b'Keepin It Real (Skit)'",0,0.556495601913,"b'56503d6d-094e-4c28-ae3d-04cc748ade5b'",-1,"Error. :( :(",0.261941177381,,"Error. :( :(",22050,"b'0e574964bf7a546a39e039f6e35aa48a'",0.096,0.0,-17.302,1,0.0,114.782,"b'TRAAAMQ128F1460CD3'"
-
 20,"b'SOQPDMB12AB017DECF'",343513,"b'Disposable Half-Truths'","b'ARMM1WO1187B9B83D8'",53.38311,"b'Sheffield Yorkshire England'",-1.46454,"b'Richard H Kirk'",0.0,490.39628,11,0.52,99.623,7,0.651,"b'Scatalist'",1980,0.475958176208,"b'39fe04bf-ba1a-481d-9836-b96beb549033'",-1,"Error. :( :(",0.35632365335,,"Error. :( :(",22050,"b'27a8f86052566edaeedf6899ef3274b0'",0.694,0.0,-15.607,0,0.484,484.38,"b'TRAAAVL128F93028BC'"
-
 21,"b'SOHKNRJ12A6701D1F8'",8876,"b'Gin & Phonic'","b'AR10USD1187B99F3F1'",,"b'Burlington Ontario Canada'",,"b'Tweeterfriendly Music'",0.0,189.57016,4,0.0,101.43,3,0.408,"b'Drop of Rain'",0,0.801136446997,"b'd89de379-665d-425c-b2e9-41b95d1edb36'",-1,"Error. :( :(",0.605507135691,,"Error. :( :(",22050,"b'1741d2c1bd271f10e783634f286746e2'",0.319,0.0,-11.642,0,0.16,181.023,"b'TRAAAPK128E0786D96'"
-
 22,"b'SOFSOCN12A8C143F5D'",611336,"b'Muertos Vivos'","b'ARXR32B1187FB57099'",,"b''",,"b'Gob'",0.0,209.60608,2,0.092,129.738,4,0.562,"b'Face the Ashes'",2007,0.651045660832,"b'c6903a2e-063c-4f91-a284-17b8f421be7b'",8355,"Error. :( :(",0.401723685504,0.604500738589,"Error. :( :(",22050,"b'580a8fe08ef0f1c7734b84547d7a8bc7'",0.066,0.0,-4.501,1,0.371,198.699,"b'TRAAAFD128F92F423A'"
-
 23,"b'SOCIWDW12A8C13D406'",300822,"b'Dimensions'","b'ARMJAGH1187FB546F3'",35.14968,"b'Memphis TN'",-90.04892,"b'The Box Tops'",0.0,148.03546,6,0.169,121.274,4,0.384,"b'Soul Deep'",1969,0.63063003759,"b'1c78ab62-db33-4433-8d0b-7c8dcf1849c2'",22066,"Error. :( :(",0.417499644971,,"Error. :( :(",22050,"b'bb9771eeef3d5b204a3c55e690f52a91'",0.148,0.0,-9.843,0,0.43,137.915,"b'TRAAABD128F429CF47'"
-
 24,"b'SONQPZK12AB0182D84'",519780,"b'Live at the Tractor Tavern'","b'ARKYKXP11F50C47A6A'",,"b''",,"b'The Supersuckers'",0.0,160.20853,9,0.512,88.358,3,0.238,"b'Double Wide'",0,0.610753710503,"b''",-1,"Error. :( :(",0.245276846569,,"Error. :( :(",22050,"b'd245c22b7e35c13c5ed203ece37a77ff'",0.0,0.0,-6.071,1,0.402,155.022,"b'TRAAAQN128F9353BA0'"
-
 25,"b'SOAFBCP12A8C13CC7D'",114398,"b"Let's Make Up And Be Friendly"","b'ARTC1LV1187B9A4858'",51.4536,"b"Goldsmith's College Lewisham Lo"",-0.01802,"b'The Bonzo Dog Band'",0.0,301.40036,2,0.654,109.678,1,0.0,"b'King Of Scurf (2007 Digital Remaster)'",1972,0.531489864431,"b'2fe8f530-861d-40ff-ac74-51f7e2701965'",59117,"Error. :( :(",0.286567249122,,"Error. :( :(",22050,"b'6b58ee050e0546fa3f1c6d9eba4edcb2'",2.374,0.0,-9.863,1,0.55,296.577,"b'TRAAAOF128F429C156'"
-
 26,"b'SOELQTU12AB018949D'",809034,"b'In Memoriam'","b'ARNZW6T1187B989D0F'",51.50632,"b'London'",-0.12714,"b'Stanley Black'",0.0,160.73098,2,0.015,97.623,3,0.774,"b'Andalucia'",2003,0.42179583845,"b'c1632a1f-2c7c-4da4-a4f6-ba05d9690055'",14584,"Error. :( :(",0.336659560667,0.0,"Error. :( :(",22050,"b'31db0ee08344a10cee9788b731c90152'",0.189,0.0,-14.567,1,0.232,153.826,"b'TRAAADT12903CCC339'"
-
 27,"b'SORRNOC12AB017F52B'",351104,"b'How It Ends'","b'ARSZ7L31187FB4E610'",39.74001,"b'Denver CO'",-104.99226,"b'Devotchka'",0.0,337.81506,0,0.424,109.296,3,0.894,"b'The Last Beat Of My Heart (b-side)'",2004,0.766994510818,"b'a66cc38c-e6cd-4725-a8fd-7d32b998347f'",-1,"Error. :( :(",0.542883760596,0.708008517531,"Error. :( :(",22050,"b'849d9421f69ddfbdd88c0a982bf7399c'",2.67,0.0,-9.441,1,0.553,331.082,"b'TRAAAHJ128F931194C'"
-
 28,"b'SODZYPO12A8C13A91E'",109081,"b'Inside / Absent'","b'AR1C2IX1187B99BF74'",,"b''",,"b'Broken Spindles'",0.0,177.99791,10,0.405,106.68,1,1.0,"b'Burn My Body (Album Version)'",0,0.58969682791,"b'fd5580a2-8da0-45b8-8a6a-83622b751a77'",-1,"Error. :( :(",0.378544666092,0.407901717218,"Error. :( :(",22050,"b'51be38f4b482eb22ff47b148bdc9bc36'",3.495,0.0,-8.053,0,0.423,161.553,"b'TRAAAEW128F42930C0'"
-
 29,"b'SOJDASC12A8C13EB49'",120502,"b'Forever'","b'ARL752Q1187FB35EFE'",23.62574,"b'Mexico'",-101.95625,"b'Alquimia'",0.0,193.01832,2,0.76,41.279,4,0.0,"b'The Lark In The Clear Air'",0,0.476940591297,"b'a163c842-4fb3-4936-9da2-996e8e0643d4'",-1,"Error. :( :(",0.307080168813,0.0,"Error. :( :(",22050,"b'98f8f6d350143b93d7a3337db80036b6'",0.0,0.0,-13.179,1,0.803,182.898,"b'TRAAAAY128F42A73F0'"
-
 30,"b'SOEKAZG12AB018837E'",565606,"b'Vile Pervert - The Music'","b'ARSVTNL1187B992A91'",51.50632,"b'London England'",-0.12714,"b'Jonathan King'",0.0,129.85424,5,0.084,156.677,4,0.0,"b"I'll Slap Your Face (Entertainment USA Theme)"",2001,0.422193702242,"b'd9533cbc-e132-4d24-a379-7af98e93cacd'",-1,"Error. :( :(",0.0,0.0,"Error. :( :(",22050,"b'2ce4be966b9129d84f2cfa770f7aefa8'",0.282,0.0,-9.495,1,0.301,121.452,"b'TRAAAEA128F935A30D'"
-
 31,"b'SOQPWCR12A6D4FB2A3'",226813,"b'Cognicide'","b'AR73AIO1187B9AD57B'",37.77916,"b'San Francisco CA'",-122.42005,"b'Western Addiction'",0.0,118.07302,7,0.187,125.475,4,0.546,"b'A Poor Recipe For Civic Cohesion'",2005,0.67175520534,"b'911ca6c8-6238-4aab-9ad3-60d964ffb453'",38879,"Error. :( :(",0.386606364066,0.481694146614,"Error. :( :(",22050,"b'c13fd321975ce498a513ce1a39167bda'",0.264,0.0,-7.24,1,0.425,115.142,"b'TRAAAAV128F421A322'"
-
 32,"b'SOABWAP12A8C13F82A'",769520,"b'Chaka Khan and Rufus (Best Of)'","b'AR5LMPY1187FB573FE'",41.88415,"b'Chicago IL'",-87.63241,"b'Chaka Khan_ Rufus'",0.0,258.89914,1,0.396,110.325,4,0.426,"b'Take Time'",1978,0.623225303239,"b'417956b5-30f7-4254-969b-1d9ceca8fe9e'",-1,"Error. :( :(",0.398984339516,0.254279270452,"Error. :( :(",22050,"b'b53e524b7dce8ec595975ea4872faab9'",15.209,0.0,-8.729,1,0.494,243.304,"b'TRAAAQO12903CD8E1C'"
-
 33,"b'SOBRKGM12A8C139EF6'",105980,"b'Bang!... The Greatest Hits Of Frankie Goes To Hollywood'","b'ARXQBR11187B98A2CC'",,"b'Liverpool England'",,"b'Frankie Goes To Hollywood'",0.0,821.05424,11,0.642,226.409,4,0.19,"b'Welcome to the Pleasuredome'",1985,0.657221045713,"b'c09c8263-40ef-4352-8031-e438b1ce68fc'",-1,"Error. :( :(",0.475514696216,,"Error. :( :(",22050,"b'e8d4ec56d77aa65c610e3e7edfede554'",5.207,0.0,-15.568,0,0.642,815.775,"b'TRAAAJN128F428E437'"
-
 34,"b'SOEPPTV12AC4689D86'",732470,"b'F\xc3\xb8rr Ei Dame'","b'ARVJNMD1187B99C2C7'",,"b''",,"b'Halvdan Sivertsen'",0.0,183.35302,5,0.888,96.282,4,1.0,"b'Sm\xc3\xa5 Ord'",2005,0.439112251953,"b'769c301f-f70d-4390-8fe1-19d65ca23492'",-1,"Error. :( :(",0.409769904974,,"Error. :( :(",22050,"b'5bcaadc196557e3e75c7622dd2831045'",0.475,0.0,-22.262,1,0.813,176.327,"b'TRAAAGF12903CEC202'"
-
 35,"b'SOFBHMB12AB018DDE4'",715527,"b'Saturday Nite Live'","b'ARHOVED1269FCCED42'",,"b''",,"b'Greasy Gravy'",0.0,289.95873,0,0.788,150.491,3,0.778,"b'On A Saturday Night'",0,0.195130913489,"b''",-1,"Error. :( :(",0.0,,"Error. :( :(",22050,"b'b7a9d715d66eaa85e621d9c596a24a6a'",0.165,0.0,-8.601,1,0.474,284.032,"b'TRAAAGW12903CC1049'"
-
 36,"b'SOMTBEP12D021B28AE'",663688,"b'Tony Bennett - 16 Golden Greats'","b'AR4ZNBW1187FB554B8'",,"b'Queens NY'",,"b'Tony Bennett'",0.0,184.2673,6,0.411,111.922,1,0.762,"b'Stranger In Paradise'",1976,0.758949615466,"b'8be0594f-8c13-46bb-ab06-f93ffba5c776'",9254,"Error. :( :(",0.538305314101,,"Error. :( :(",22050,"b'6c0811337acc7178b06886294074af3f'",0.422,0.0,-14.787,1,0.467,179.815,"b'TRAAAJO12903CAAC69'"
-
 37,"b'SOQHXMF12AB0182363'",539081,"b'I Need You'","b'ARGSJW91187B9B1D6B'",35.21962,"b'North Carolina'",-80.01955,"b'JennyAnyKind'",0.0,218.77506,5,0.354,146.765,1,0.0,"b'Young Boy Blues'",0,0.360031166464,"b'eb722df4-372e-4742-8586-f7ff658012d6'",-1,"Error. :( :(",0.296268954311,0.0,"Error. :( :(",22050,"b'028c11fd932f96f85cd550ae50a1b188'",2.125,0.0,-10.021,0,0.485,207.012,"b'TRAAAVO128F93133D4'"
-
 38,"b'SOJROSW12A582A24EC'",448551,"b'Malvina Reynolds'","b'ARWBHFL1187B99B7BC'",,"b''",,"b'Malvina Reynolds'",0.0,215.82322,7,0.061,80.478,4,0.423,"b'Tungsten (only issued previously on 45)'",0,0.529962982401,"b'33253c93-a45a-4f56-96fc-0897fd95d8db'",16982,"Error. :( :(",0.40158676892,,"Error. :( :(",22050,"b'd29f49d74b88e5663a74e25def762e78'",0.0,0.0,-9.738,1,0.602,207.412,"b'TRAAAJG128F9308A25'"
-
 39,"b'SOXVLOJ12AB0189215'",514953,"b'Las Numero 1 De La Sonora Santanera'","b'ARKRRTF1187B9984DA'",,"b''",,"b'Sonora Santanera'",0.0,177.47546,8,0.643,100.07,1,0.0,"b'Amor De Cabaret'",0,0.487356790928,"b'7a273984-edd9-4451-9c4d-39b38f05ebcd'",13951,"Error. :( :(",0.343428378297,,"Error. :( :(",22050,"b'fa329738005ca53715d9f7381a0d1fe3'",0.282,0.0,-9.689,1,0.565,172.304,"b'TRAAADZ128F9348C2E'"
-
 40,"b'SOTAZDY12AB0187616'",589951,"b'The Vibe Electric'","b'ARZKCQM1257509D107'",,"b''",,"b'Dataphiles'",0.0,374.62159,10,0.692,131.942,4,0.866,"b'Drillbit'",0,0.332617595811,"b''",-1,"Error. :( :(",0.0,,"Error. :( :(",22050,"b'7d8f2c9ceb80bdc5cafc97d044eec404'",0.0,0.0,-8.29,0,0.478,368.547,"b'TRAAAND12903CD1F1B'"
-
 41,"b'SOIAZJW12AB01853F1'",358182,"b'Pink World'","b'AR8ZCNI1187B9A069B'",,"b''",,"b'Planet P Project'",0.0,269.81832,4,0.717,86.643,4,0.487,"b'Pink World'",1984,0.426667857069,"b'19d232b9-b4d7-4dc8-b259-bf65efb655b1'",-1,"Error. :( :(",0.332275746599,0.265861049211,"Error. :( :(",22050,"b'eda960ea61211d980653d589e8e74c1d'",5.3,0.0,-13.496,1,0.652,258.99,"b'TRAAARJ128F9320760'"
-
 42,"b'SOTLQMM12AB017EE6D'",455060,"b'Mostrati'","b'ARHFSZI11F4C8412BF'",35.21962,"b'North Carolina'",-80.01955,"b'EST'",0.0,246.02077,2,0.897,102.026,4,0.858,"b'Non Lo Saprai Mai'",0,0.616904073249,"b''",-1,"Error. :( :(",0.0,,"Error. :( :(",22050,"b'1a8dde88af2a437c4481ae2fee769410'",0.0,0.0,-4.944,0,1.0,234.585,"b'TRAAAMG128F9318C5E'"
-
 43,"b'SOKTJDS12AF72A25E5'",164041,"b'Anthology: From Jersey It Came'","b'ARA23XO1187B9AF18F'",40.57885,"b'Carteret New Jersey'",-74.21956,"b'The Smithereens'",0.0,192.522,1,0.931,123.756,4,0.494,"b'Drown In My Own Tears (24-Bit Digitally Remastered 04)'",0,0.628898526808,"b'fae2cd4c-f847-4cb3-b311-60c8906cdb0b'",61479,"Error. :( :(",0.405014695008,,"Error. :( :(",22050,"b'3d66db41a08372eca577909b9bebc6fe'",0.0,0.0,-5.902,1,0.539,177.325,"b'TRAAAUC128F428716F'"
-
 44,"b'SOIGICF12A8C141BC5'",464727,"b'Colours'","b'AREWD471187FB49873'",,"b''",,"b'Son Kite'",0.0,580.54485,11,0.381,91.947,3,1.0,"b'Game & Watch'",2004,0.55662362248,"b'ca78e972-0349-4d99-af6d-56646376ba9b'",-1,"Error. :( :(",0.34248028859,0.468997787645,"Error. :( :(",22050,"b'4620b13e5672efe7c8550d739daa78fb'",5.399,0.0,-10.142,0,0.399,562.161,"b'TRAAAEM128F93347B9'"
-
 45,"b'SOOVHYF12A8C134892'",282218,"b'Late Nite'","b'ARCLYBR1187FB53913'",37.54703,"b'San Mateo CA'",-122.31483,"b'Neal Schon'",0.0,304.56118,9,0.718,149.642,4,1.0,"b"I'll Be Waiting"",1989,0.617390197824,"b'58325670-9323-464a-8b20-3e8d7b26df60'",18267,"Error. :( :(",0.445716389515,0.429210530635,"Error. :( :(",22050,"b'9af3e2b97eb44c7bdc45b990683a5576'",0.078,0.0,-16.06,1,0.711,279.249,"b'TRAAAHD128F42635A5'"
-
 46,"b'SOKBZHG12A81C21426'",276907,"b'Tech-Trance Essentials Part 2'","b'ARDMMHO1187FB37F17'",,"b''",,"b'Gleave'",0.0,477.3873,1,0.312,135.025,4,0.882,"b'Come With Me'",0,0.388466972368,"b'5fe23eff-977a-45cb-90ce-a31f2c22624b'",-1,"Error. :( :(",0.0,,"Error. :( :(",22050,"b'6117ce3ffe8c5df96d7932a9793fc946'",0.0,0.0,-7.591,1,0.251,469.194,"b'TRAAAVH128F42554C6'"
-
 47,"b'SOXZYWX12A6310ED0C'",1840,"b'Twentysomething'","b'ARC1IHZ1187FB4E920'",,"b''",,"b'Jamie Cullum'",0.0,246.9873,9,0.417,152.156,4,0.394,"b"It's About Time"",0,0.786806254171,"b'e0e9d279-37d5-4493-99b8-5a21309502f6'",773,"Error. :( :(",0.562061407367,,"Error. :( :(",22050,"b'b382b89ec77b761da4053a9ac795e8d3'",0.11,0.0,-8.849,1,0.5,239.154,"b'TRAAAED128E0783FAB'"
-
 48,"b'SOXQUSV12AB018359A'",568164,"b'Nice And Nasty'","b'ARZUWUC1187FB54557'",,"b'India'",,"b'Silk'",0.0,234.94485,9,0.874,127.504,4,0.38,"b'Kakaiba'",0,0.698657125252,"b'9f081bb2-46f3-45e0-a2b2-bc4d4ca9c43b'",46057,"Error. :( :(",0.458710715922,,"Error. :( :(",22050,"b'0ee0f12919ca832c4af71c2079e5f9e9'",0.177,0.0,-12.227,1,0.77,226.412,"b'TRAAAHE12903C9669C'"
-
 49,"b'SOYMRWW12A6D4FAB14'",41838,"b'Ordinary Day'","b'ARKFYS91187B98E58F'",,"b''",,"b'Jeff And Sheri Easter'",0.0,267.7024,5,0.635,147.782,3,0.454,"b'The Moon And I (Ordinary Day Album Version)'",0,0.535292735512,"b'79c403f9-5467-4f23-8426-9ca3fc60a115'",63801,"Error. :( :(",0.385470550556,,"Error. :( :(",22050,"b'8ee90e90bb8714300574486f379effb5'",2.264,0.0,-9.323,1,0.557,254.27,"b'TRAAAMO128F1481E7F'"
-
 50,"b'SODFMEL12AC4689D8C'",596752,"b'Die Stadt'","b'ARKB4E31187FB5A71D'",,"b''",,"b'Minni the Moocher'",0.0,176.37832,9,0.619,116.77,4,1.0,"b'Rosi_ das M\xc3\xa4dchen aus dem Chat'",0,0.524852865397,"b'e7151c19-7754-4660-9c51-30fecc5c3535'",-1,"Error. :( :(",0.228023551831,,"Error. :( :(",22050,"b'48d211ca1f9a02459d8599a3b03806ee'",0.623,0.0,-3.383,1,0.501,168.902,"b'TRAAAFI12903CE4F0E'"
-
 51,"b'SOGSSXS12A8AE4815A'",135335,"b'No Holds Barred'","b'ARXYVR61187B9A8E41'",,"b'Steenvoorde'",,"b'Biohazard'",0.0,120.39791,2,1.0,201.568,1,0.0,"b'What Makes Us Tick (Live) (Album Version)'",0,0.686626333621,"b'be5fe2ab-007c-4610-8d53-d81675d06a09'",7666,"Error. :( :(",0.441820461441,,"Error. :( :(",22050,"b'9f7ee5333878884a8d8ceaca8ea1c600'",0.0,0.0,-3.809,1,0.758,114.741,"b'TRAAAHO128F423BBE3'"
-
 52,"b'SOPZWJE12A58A79C65'",118959,"b'\xc3\x96rd\xc3\xb6gi Angyal'","b'AR0CFT71187FB5CFD4'",,"b''",,"b'Magdi R\xc3\xbazsa'",0.0,179.01669,7,0.842,119.027,4,0.731,"b'Szembej\xc3\xb6vo s\xc3\xa1v (Oncoming Traffic)'",0,0.352885921523,"b'c8de3ead-8cd3-43bc-9e0d-6632620cbff4'",96959,"Error. :( :(",0.0,,"Error. :( :(",22050,"b'cfca64804820a0b1a46e7b6c22d7d8e3'",0.0,0.0,-4.413,1,0.935,171.735,"b'TRAAAFW128F42A4CFD'"
-
 53,"b'SOYKDDB12AB017EA7A'",498081,"b'Jamboree'","b'ARWNWOT1242077E494'",,"b''",,"b'F.L.Y. (Fast Life Yungstaz)'",0.0,246.54322,3,0.319,141.968,4,0.29,"b'Bands'",0,0.644292434304,"b''",-1,"Error. :( :(",0.349560222534,,"Error. :( :(",22050,"b'f98a874d0d64587150ec6cdaa59220ef'",0.0,0.0,-5.816,1,0.259,239.113,"b'TRAAAFP128F931B4E3'"
-
