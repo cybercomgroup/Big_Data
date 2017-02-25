@@ -285,7 +285,7 @@ def main():
         csvAttributeList = re.split('\W+', csvRowString)
         for i, v in enumerate(csvAttributeList):
             csvAttributeList[i] = csvAttributeList[i].lower()
-        outputFile1.write("SongNumber,");
+        outputFile1.write("\"SongNumber\",");
         outputFile1.write(csvRowString + "\n");
         csvRowString = ""  
 
@@ -426,7 +426,7 @@ def main():
                 elif attribute == 'Familiarity'.lower():                        ####Added by us!
                     csvRowString += song.familiarity
                 elif attribute == 'artist_mbid'.lower():
-                    csvRowString += song.artist_mbid
+                    csvRowString += "\"" + song.artist_mbid + "\""
                 elif attribute == 'artist_playmeid'.lower():
                     csvRowString += song.artist_playmeid
                 elif attribute == 'artist_7digid'.lower():
@@ -448,7 +448,7 @@ def main():
                 elif attribute == 'a_sample_rate'.lower():
                     csvRowString += song.a_sample_rate
                 elif attribute == 'audio_md5'.lower():
-                    csvRowString += song.audio_md5
+                    csvRowString += "\"" + song.audio_md5 + "\""
                 elif attribute == 'end_of_fade_in'.lower():
                     csvRowString += song.end_of_fade_in
                 elif attribute == 'energy'.lower():
@@ -462,7 +462,7 @@ def main():
                 elif attribute == 'start_of_fade_out'.lower():
                     csvRowString += song.start_of_fade_out
                 elif attribute == 'trackid'.lower():
-                    csvRowString += song.trackid
+                    csvRowString += "\"" + song.trackid + "\""
                 elif attribute == 'segm_start'.lower():
                     csvRowString += song.segm_start
                 elif attribute == 'segm_conf'.lower():
