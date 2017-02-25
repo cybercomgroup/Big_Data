@@ -279,11 +279,7 @@ def main():
         #################################################
         #change the order of the csv file here
         #Default is to list all available attributes (in alphabetical order)
-        csvRowString = ("SongID,AlbumID,AlbumName,ArtistID,ArtistLatitude,ArtistLocation,"+
-            "ArtistLongitude,ArtistName,Danceability,Duration,KeySignature,"+
-            "KeySignatureConfidence,Tempo,TimeSignature,TimeSignatureConfidence,"+
-            "Title,Year,Familiarity,Artist_Mbid,Artist_PlaymeId,Artist_7didId,Hottness,"+
-		"Song_Hottness,7digitalid,A_Sample_Rate,Audio_Md5,End_Of_Fade_In,Energy,"+ 			"Loudness,Mode,Mode_Conf,Start_Of_Fade_Out,TrackId")
+        csvRowString = ("\"SongID\",\"AlbumID\",\"AlbumName\",\"ArtistID\",\"ArtistLatitude\",\"ArtistLocation\",\"ArtistLongitude\",\"ArtistName\",\"Danceability\",\"Duration\",\"KeySignature\",\"KeySignatureConfidence\",\"Tempo\",\"TimeSignature\",\"TimeSignatureConfidence\",\"Title\",\"Year\",\"Familiarity\",\"Artist_Mbid\",\"Artist_PlaymeId\",\"Artist_7didId\",\"Hottness\",\"Song_Hottness\",\"7digitalid\",\"A_Sample_Rate\",\"Audio_Md5\",\"End_Of_Fade_In\",\"Energy\",\"Loudness\",\"Mode\",\"Mode_Conf\",\"Start_Of_Fade_Out\",\"TrackId\"")
         #################################################
 
         csvAttributeList = re.split('\W+', csvRowString)
@@ -502,7 +498,7 @@ def main():
                 elif attribute == 'artist_mbtags_count'.lower():
                     csvRowString += song.artist_mbtags_count
                 else:
-                    csvRowString += "Erm. This didn't work. Error. :( :(\n"
+                    csvRowString += "\"Error. :( :(\""
 
                 csvRowString += ","
 
