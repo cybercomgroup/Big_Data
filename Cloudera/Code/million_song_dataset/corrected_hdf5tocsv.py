@@ -18,8 +18,8 @@ Thierry Bertin-Mahieux (2010) at Columbia University
 
 Credit:
 This HDF5 to CSV code makes use of the following example code provided
-at the Million Song Dataset website 
-(Home>Tutorial/Iterate Over All Songs, 
+at the Million Song Dataset website
+(Home>Tutorial/Iterate Over All Songs,
 http://labrosa.ee.columbia.edu/millionsong/pages/iterate-over-all-songs),
 Which gives users the following code to get all song titles:
 
@@ -114,7 +114,7 @@ class Song:
         print ("Total Song Count %i" % Song.songCount)
 
     def displaySong(self):
-        print ("ID: %s" % self.id)   
+        print ("ID: %s" % self.id)
 
 
 def main():
@@ -274,7 +274,7 @@ def main():
             outputFile1.write(csvRowString);
             csvRowString = ""
     #else, if you want to hard code the order of the csv file and not prompt
-    #the user, 
+    #the user,
     else:
         #################################################
         #change the order of the csv file here
@@ -287,7 +287,7 @@ def main():
             csvAttributeList[i] = csvAttributeList[i].lower()
         csvRowString += "\n"
         outputFile1.write(csvRowString);
-        csvRowString = ""  
+        csvRowString = ""
 
     #################################################
 
@@ -299,7 +299,7 @@ def main():
     #################################################
 
     #FOR LOOP
-    for root, dirs, files in os.walk(basedir):        
+    for root, dirs, files in os.walk(basedir):
         files = glob.glob(os.path.join(root,'*'+ext))
         for f in files:
             print(f)
@@ -330,7 +330,7 @@ def main():
             song.timeSignatureConfidence = str(hdf5_getters.get_time_signature_confidence(songH5File))
             song.title = str(hdf5_getters.get_title(songH5File))
             song.year = str(hdf5_getters.get_year(songH5File))
-            
+
             #########Added by us!
             song.familiarity = str(hdf5_getters.get_artist_familiarity(songH5File))
             song.artist_mbid = str(hdf5_getters.get_artist_mbid(songH5File))
@@ -380,6 +380,8 @@ def main():
                     csvRowString += song.albumID
                 elif attribute == 'AlbumName'.lower():
                     albumName = song.albumName
+                    albumName = albumName.replace("b\"", "")
+                    albumName = albumName.replace("\"", "")
                     albumName = albumName.replace(',',"")
                     csvRowString += "\"" + albumName + "\""
                 elif attribute == 'ArtistID'.lower():
@@ -392,14 +394,19 @@ def main():
                 elif attribute == 'ArtistLocation'.lower():
                     location = song.artistLocation
                     location = location.replace(',','')
+                    location = location.replace("b\"", "")
+                    location = location.replace("\"", "")
                     csvRowString += "\"" + location + "\""
                 elif attribute == 'ArtistLongitude'.lower():
                     longitude = song.artistLongitude
                     if longitude == 'nan':
                         longitude = ''
-                    csvRowString += longitude                
+                    csvRowString += longitude
                 elif attribute == 'ArtistName'.lower():
-                    csvRowString += "\"" + song.artistName + "\""                
+                    artistName = song.artistName
+                    artistName = artistName.replace("b\"", "")
+                    artistName = artistName.replace("\"", "")
+                    csvRowString += "\"" + artistName + "\""
                 elif attribute == 'Danceability'.lower():
                     csvRowString += song.danceability
                 elif attribute == 'Duration'.lower():
@@ -407,7 +414,7 @@ def main():
                 elif attribute == 'KeySignature'.lower():
                     csvRowString += song.keySignature
                 elif attribute == 'KeySignatureConfidence'.lower():
-                    # print "key sig conf: " + song.timeSignatureConfidence                                 
+                    # print "key sig conf: " + song.timeSignatureConfidence
                     csvRowString += song.keySignatureConfidence
                 elif attribute == 'SongID'.lower():
                     csvRowString += "\"" + song.id + "\""
@@ -417,10 +424,13 @@ def main():
                 elif attribute == 'TimeSignature'.lower():
                     csvRowString += song.timeSignature
                 elif attribute == 'TimeSignatureConfidence'.lower():
-                    # print "time sig conf: " + song.timeSignatureConfidence                                   
+                    # print "time sig conf: " + song.timeSignatureConfidence
                     csvRowString += song.timeSignatureConfidence
                 elif attribute == 'Title'.lower():
-                    csvRowString += "\"" + song.title + "\""
+                    t = song.title
+                    t = t.replace("b\"", "")
+                    t = t.replace("\"", "")
+                    csvRowString += "\"" + t + "\""
                 elif attribute == 'Year'.lower():
                     csvRowString += song.year
                 elif attribute == 'Familiarity'.lower():                        ####Added by us!
@@ -512,5 +522,5 @@ def main():
             songH5File.close()
 
     outputFile1.close()
-        
+
 main()
