@@ -61,7 +61,7 @@ class Song:
         self.artistName = None
         self.danceability = None
         self.duration = None
-        self.genreList = []
+        # self.genreList = []
         self.keySignature = None
         self.keySignatureConfidence = None
         self.lyrics = None
@@ -79,10 +79,10 @@ class Song:
         self.hottness = None
         self.song_hottness = None
         self.digitalid7 = None
-        self.similar_artists = None
-        self.artist_terms = None
-        self.art_terms_freq = None
-        self.art_terms_weight = None
+        #self.similar_artists = None
+        #self.artist_terms = None
+        #self.art_terms_freq = None
+        #self.art_terms_weight = None
         self.a_sample_rate = None
         self.audio_md5 = None
         self.end_of_fade_in = None
@@ -92,23 +92,23 @@ class Song:
         self.mode_conf = None
         self.start_of_fade_out = None
         self.trackid = None
-        self.segm_start = None
-        self.segm_conf = None
-        self.segm_pitch = None
-        self.segm_timbre = None
-        self.segm_max_loud = None
-        self.segm_max_loud_time = None
-        self.segm_loud_start = None
-        self.sect_start = None
-        self.sect_conf = None
-        self.beats_start = None
-        self.beats_conf = None
-        self.bars_start = None
-        self.bars_conf = None
-        self.tatums_start = None
-        self.tatums_conf = None
-        self.artist_mbtags = None
-        self.artist_mbtags_count = None
+        #self.segm_start = None
+        #self.segm_conf = None
+        #self.segm_pitch = None
+        #self.segm_timbre = None
+        #self.segm_max_loud = None
+        #self.segm_max_loud_time = None
+        #self.segm_loud_start = None
+        #self.sect_start = None
+        #self.sect_conf = None
+        #self.beats_start = None
+        #self.beats_conf = None
+        #self.bars_start = None
+        #self.bars_conf = None
+        #self.tatums_start = None
+        #self.tatums_conf = None
+        #self.artist_mbtags = None
+        #self.artist_mbtags_count = None
 
     def displaySongCount(self):
         print ("Total Song Count %i" % Song.songCount)
@@ -282,7 +282,8 @@ def main():
         csvRowString = ("SongID,AlbumID,AlbumName,ArtistID,ArtistLatitude,ArtistLocation,"+
             "ArtistLongitude,ArtistName,Danceability,Duration,KeySignature,"+
             "KeySignatureConfidence,Tempo,TimeSignature,TimeSignatureConfidence,"+
-            "Title,Year,Familiarity,Artist_Mbid,Artist_PlaymeId,Artist_7didId,Hottness, Song_Hottness,7digitalid,Similar_Artists,Artist_Terms,Art_Terms_Freq,Art_Terms_Weight,A_Sample_Rate,Audio_Md5,End_Of_Fade_In,Energy,Loudness,Mode,Mode_Conf,Start_Of_Fade_Out,TrackId,Segm_Start,Segm_Conf,Segm_Pitch,Segm_Timbre,Segm_Max_Loud,Segm_Max_Loud_Time,Segm_Loud_Start,Sect_Start,Sect_Conf,Beats_Start,Beats_Conf,Bars_Start,Bars_Conf,Tatums_Start,Tatums_Conf,Artist_Mbtags,Artist_Mbtags_Count")
+            "Title,Year,Familiarity,Artist_Mbid,Artist_PlaymeId,Artist_7didId,Hottness,"+
+		"Song_Hottness,7digitalid,A_Sample_Rate,Audio_Md5,End_Of_Fade_In,Energy,"+ 			"Loudness,Mode,Mode_Conf,Start_Of_Fade_Out,TrackId")
         #################################################
 
         csvAttributeList = re.split('\W+', csvRowString)
@@ -342,10 +343,10 @@ def main():
             song.hottness = str(hdf5_getters.get_artist_hotttnesss(songH5File))
             song.song_hottness = str(hdf5_getters.get_song_hotttnesss(songH5File))
             song.digitalid7 = str(hdf5_getters.get_track_7digitalid(songH5File))
-            song.similar_artists = str(hdf5_getters.get_similar_artists(songH5File))
-            song.artist_terms = str(hdf5_getters.get_artist_terms(songH5File))
-            song.art_terms_freq = str(hdf5_getters.get_artist_terms_freq(songH5File))
-            song.art_terms_weight = str(hdf5_getters.get_artist_terms_weight(songH5File))
+            #song.similar_artists = str(hdf5_getters.get_similar_artists(songH5File))
+            #song.artist_terms = str(hdf5_getters.get_artist_terms(songH5File))
+            #song.art_terms_freq = str(hdf5_getters.get_artist_terms_freq(songH5File))
+            #song.art_terms_weight = str(hdf5_getters.get_artist_terms_weight(songH5File))
             song.a_sample_rate = str(hdf5_getters.get_analysis_sample_rate(songH5File))
             song.audio_md5 = str(hdf5_getters.get_audio_md5(songH5File))
             song.end_of_fade_in = str(hdf5_getters.get_end_of_fade_in(songH5File))
@@ -355,23 +356,23 @@ def main():
             song.mode_conf = str(hdf5_getters.get_mode_confidence(songH5File))
             song.start_of_fade_out = str(hdf5_getters.get_start_of_fade_out(songH5File))
             song.trackid = str(hdf5_getters.get_track_id(songH5File))
-            song.segm_start = str(hdf5_getters.get_segments_start(songH5File))
-            song.segm_conf = str(hdf5_getters.get_segments_confidence(songH5File))
-            song.segm_pitch = str(hdf5_getters.get_segments_pitches(songH5File))
-            song.segm_timbre = str(hdf5_getters.get_segments_timbre(songH5File))
-            song.segm_max_loud = str(hdf5_getters.get_segments_loudness_max(songH5File))
-            song.segm_max_loud_time = str(hdf5_getters.get_segments_loudness_max_time(songH5File))
-            song.segm_loud_start = str(hdf5_getters.get_segments_loudness_start(songH5File))
-            song.sect_start = str(hdf5_getters.get_sections_start(songH5File))
-            song.sect_conf = str(hdf5_getters.get_sections_confidence(songH5File))
-            song.beats_start = str(hdf5_getters.get_beats_start(songH5File))
-            song.beats_conf = str(hdf5_getters.get_beats_confidence(songH5File))
-            song.bars_start = str(hdf5_getters.get_bars_start(songH5File))
-            song.bars_conf = str(hdf5_getters.get_bars_confidence(songH5File))
-            song.tatums_start = str(hdf5_getters.get_tatums_start(songH5File))
-            song.tatums_conf = str(hdf5_getters.get_tatums_confidence(songH5File))
-            song.artist_mbtags = str(hdf5_getters.get_artist_mbtags(songH5File))
-            song.artist_mbtags_count = str(hdf5_getters.get_artist_mbtags_count(songH5File))
+            #song.segm_start = str(hdf5_getters.get_segments_start(songH5File))
+            #song.segm_conf = str(hdf5_getters.get_segments_confidence(songH5File))
+            #song.segm_pitch = str(hdf5_getters.get_segments_pitches(songH5File))
+            #song.segm_timbre = str(hdf5_getters.get_segments_timbre(songH5File))
+            #song.segm_max_loud = str(hdf5_getters.get_segments_loudness_max(songH5File))
+            #song.segm_max_loud_time = str(hdf5_getters.get_segments_loudness_max_time(songH5File))
+            #song.segm_loud_start = str(hdf5_getters.get_segments_loudness_start(songH5File))
+            #song.sect_start = str(hdf5_getters.get_sections_start(songH5File))
+            #song.sect_conf = str(hdf5_getters.get_sections_confidence(songH5File))
+            #song.beats_start = str(hdf5_getters.get_beats_start(songH5File))
+            #song.beats_conf = str(hdf5_getters.get_beats_confidence(songH5File))
+            #song.bars_start = str(hdf5_getters.get_bars_start(songH5File))
+            #song.bars_conf = str(hdf5_getters.get_bars_confidence(songH5File))
+            #song.tatums_start = str(hdf5_getters.get_tatums_start(songH5File))
+            #song.tatums_conf = str(hdf5_getters.get_tatums_confidence(songH5File))
+            #song.artist_mbtags = str(hdf5_getters.get_artist_mbtags(songH5File))
+            #song.artist_mbtags_count = str(hdf5_getters.get_artist_mbtags_count(songH5File))
 
             #print song count
             csvRowString += str(song.songCount) + ","
