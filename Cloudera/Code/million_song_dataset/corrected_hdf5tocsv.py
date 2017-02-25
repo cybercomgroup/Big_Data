@@ -283,9 +283,9 @@ def main():
         #################################################
 
         csvAttributeList = re.split(',', csvRowString)
-        print(csvAttributeList)
         for i, v in enumerate(csvAttributeList):
             csvAttributeList[i] = csvAttributeList[i].lower()
+            csvAttributeList[i] = csvAttributeList[i].replace("\"", "")
         outputFile1.write("\"SongNumber\",");
         outputFile1.write(csvRowString + "\n");
         csvRowString = ""  
