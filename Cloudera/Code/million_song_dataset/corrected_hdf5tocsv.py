@@ -285,9 +285,7 @@ def main():
         csvAttributeList = re.split(',', csvRowString)
         for i, v in enumerate(csvAttributeList):
             csvAttributeList[i] = csvAttributeList[i].lower()
-        csvRowString = "SongNumber," + csvRowString
         csvRowString += "\n"
-        #outputFile1.write("SongNumber,");
         outputFile1.write(csvRowString);
         csvRowString = ""  
 
@@ -373,7 +371,7 @@ def main():
             #song.artist_mbtags_count = str(hdf5_getters.get_artist_mbtags_count(songH5File))
 
             #print song count
-            csvRowString += str(song.songCount) + ","
+            #csvRowString += str(song.songCount) + ","
 
             for attribute in csvAttributeList:
                 # print "Here is the attribute: " + attribute + " \n"
@@ -500,7 +498,7 @@ def main():
                 elif attribute == 'artist_mbtags_count'.lower():
                     csvRowString += song.artist_mbtags_count
                 else:
-                    csvRowString += "\"Error. :( :(\""
+                    csvRowString += "\"ERR\""
 
                 csvRowString += ","
 
