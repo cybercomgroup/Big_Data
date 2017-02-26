@@ -11,9 +11,7 @@ train_set,test_set=gen.generate_sets(whole_set, 0)
 
 
 #For verification
-train_size=0
-for l in train_set:
-    train_size+=len(l)
+train_size=len(train_set)
 print("Train set size: "+str(train_size))
 print("Test set size: "+str(len(test_set)))
 print("Together: "+str((train_size+len(test_set))))
