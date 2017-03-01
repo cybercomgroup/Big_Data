@@ -5,8 +5,6 @@ import pandas as pd
 # To run the spark job, run this command:
 # PYSPARK_PYTHON=/opt/cloudera/parcels/Anaconda/bin/python spark-submit <file>.py 
 
-
-
 # Params: Spark RDD object from a csv-file.
 # Returns: Pandas DF of RDD object
 def rddToPand(RDD):
