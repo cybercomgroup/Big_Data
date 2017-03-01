@@ -4,8 +4,8 @@
  * TO INSTALL LIBS: http://stackoverflow.com/questions/36385398/java-hdf5-library-install
  *
  * Add path as args[0] to the m5 files, dont take too many though!
- *
- *
+ * The dataset: https://labrosa.ee.columbia.edu/millionsong/pages/getting-dataset
+ * Use the small example set which represents 1% of the whoel dataset (1,8gb)
  */
 
 import ncsa.hdf.hdf5lib.H5;
@@ -44,11 +44,12 @@ public class Main {
     public static void main(String[] args) {
 
         String path = args[0];
-        ArrayList<File> fileList = listf(path);
+        ArrayList<File> fileList = listf(path); //Get all the files in directory recursively
 
         if (fileList == null) return;
 
         System.out.println("Amount of files: " + fileList.size());
+
         for ( File f : fileList ) { //Do whatever for each found file
             String extension;
             try{
