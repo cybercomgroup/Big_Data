@@ -30,7 +30,9 @@ headers = list(df)
 
 #Drops colums which values are the same or close
 """
-Do not work right now dont know why however
+Do not work right now dont know why however, i think its beacuse it will not
+dropp anything in the test set, so un comment this for lager and when it will
+actully do work
 
 tmp = VarianceThreshold(threshold=(.8 *(1 - .8))).fit_transform(X)
 tmp1 = VarianceThreshold(threshold=(.8 *(1 - .8))).fit_transform(y)
@@ -70,18 +72,14 @@ for x in range(0,5):
     count = np.bincount(tmp)
     testarn.append(np.argmax(count))
 sistaTest = np.argmax(np.bincount(testarn))
-print("Sista")
-print(sistaTest)
 best_train_set = SelectKBest(k = sistaTest).fit_transform(X,y)
-
 ckeckFeature = SelectKBest(k = sistaTest).fit(X,y)
-
 test = list(ckeckFeature.fit(X,y).get_support(indices=True))
+
 """
 Make sure that you fix so that the colum you dropp is acounted for
 in the print(headers), for exampel for the titanic dataset
 I used I needed to add one
 """
 for Data in test:
-    print(headers[Data + 1])
-print("programmet körs till slutet")
+    print("You should dropp: ", headers[Data + 1])
