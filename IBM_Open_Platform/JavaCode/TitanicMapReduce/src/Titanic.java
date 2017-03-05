@@ -3,7 +3,7 @@ import java.io.InputStream;
 import java.io.StringReader;
 import java.util.*;
 
-import au.com.bytecode.opencsv.CSVReader;
+import com.opencsv.CSVReader;
 import org.apache.hadoop.conf.*;
 import org.apache.hadoop.fs.*;
 import org.apache.hadoop.io.*;
