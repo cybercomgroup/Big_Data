@@ -1,6 +1,0 @@
-Mr	-	 tot: 517, surv: 81, ratio: 0.15667311411992263
-Mrs	-	 tot: 127, surv: 101, ratio: 0.7952755905511811
-Miss	-	 tot: 184, surv: 129, ratio: 0.7010869565217391
-Master	-	 tot: 40, surv: 23, ratio: 0.575
-Rare	-	 tot: 16, surv: 5, ratio: 0.3125
-Dr	-	 tot: 7, surv: 3, ratio: 0.42857142857142855
