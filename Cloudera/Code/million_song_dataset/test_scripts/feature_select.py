@@ -25,11 +25,14 @@ Drop the feature you want to predict
 """
 X = np.array(df.drop([PREDICT_FEATURE],1))
 y = np.array(df[PREDICT_FEATURE])
-
+#Features
+headers = list(df)
 
 #Drops colums which values are the same or close
 """
-Do not work right now dont know why however
+Do not work right now dont know why however, i think its beacuse it will not
+dropp anything in the test set, so un comment this for lager and when it will
+actully do work
 
 tmp = VarianceThreshold(threshold=(.8 *(1 - .8))).fit_transform(X)
 tmp1 = VarianceThreshold(threshold=(.8 *(1 - .8))).fit_transform(y)
@@ -61,7 +64,7 @@ def feature_select_with_SelectKBest(set_X, set_Y):
 resultOfnumbers = []
 testarn = []
 for x in range(0,5):
-    for i in range(0,500):
+    for i in range(0,511):
         koll = feature_select_with_SelectKBest(X,y)
         #print(koll)
         resultOfnumbers.append(koll)
@@ -69,7 +72,14 @@ for x in range(0,5):
     count = np.bincount(tmp)
     testarn.append(np.argmax(count))
 sistaTest = np.argmax(np.bincount(testarn))
-print("Sista")
 best_train_set = SelectKBest(k = sistaTest).fit_transform(X,y)
-print(best_train_set)
-print("programmet körs till slutet")
+ckeckFeature = SelectKBest(k = sistaTest).fit(X,y)
+test = list(ckeckFeature.fit(X,y).get_support(indices=True))
+
+"""
+Make sure that you fix so that the colum you dropp is acounted for
+in the print(headers), for exampel for the titanic dataset
+I used I needed to add one
+"""
+for Data in test:
+    print("You should dropp: ", headers[Data + 1])
